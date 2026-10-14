@@ -9,7 +9,7 @@ figure.constrained_layout.use: True
 figure.constrained_layout.h_pad: 0.02
 figure.constrained_layout.w_pad: 0.02
 font.family: sans-serif
-font.sans-serif: Liberation Sans, Arial, Helvetica, Nimbus Sans, DejaVu Sans
+font.sans-serif: Arial, Helvetica, Liberation Sans, Nimbus Sans, DejaVu Sans
 font.monospace: JetBrains Mono, IBM Plex Mono, Geist Mono, DejaVu Sans Mono
 font.size: 7.0
 text.color: 111418
@@ -33,10 +33,12 @@ legend.title_fontsize: 7.0
 figure.titlesize: 9.0
 figure.titleweight: bold
 mathtext.fontset: custom
-mathtext.rm: Liberation Sans
-mathtext.it: Liberation Sans:italic
-mathtext.bf: Liberation Sans:bold
-mathtext.sf: Liberation Sans
+mathtext.rm: Arial
+mathtext.it: Arial:italic
+mathtext.bf: Arial:bold
+mathtext.sf: Arial
+mathtext.cal: Arial
+mathtext.tt: DejaVu Sans Mono
 mathtext.default: regular
 axes.formatter.use_mathtext: False
 axes.unicode_minus: True

@@ -294,14 +294,30 @@ def dots_and_summary(ax, groups, colors, labels=None, summary="mean", err="sem",
     return xs_all
 
 
+def _kde(d, ys, bw=None):
+    """Gaussian KDE (scipy.stats.gaussian_kde semantics; numpy-only fallback).
+    bw: None/'scott' | 'silverman' | scalar factor."""
+    try:
+        from scipy.stats import gaussian_kde
+        return gaussian_kde(d, bw_method=bw)(ys)
+    except ImportError:
+        n = len(d)
+        if bw is None or bw == "scott":
+            f = n ** (-1 / 5)
+        elif bw == "silverman":
+            f = (n * 3 / 4) ** (-1 / 5)
+        else:
+            f = float(bw)
+        h = max(np.std(d, ddof=1) * f, 1e-12)
+        return np.exp(-0.5 * ((ys[:, None] - d[None]) / h) ** 2).sum(1)
+
+
 def half_violin(ax, data, pos, color, width=0.4, side="right", alpha=0.35, lw=0.6, bw=None):
     """One-sided KDE (for raincloud plots: half-violin + jittered dots + box)."""
-    from scipy.stats import gaussian_kde
     d = np.asarray(data, float)
     d = d[np.isfinite(d)]
-    kde = gaussian_kde(d, bw_method=bw)
     ys = np.linspace(d.min(), d.max(), 200)
-    v = kde(ys)
+    v = _kde(d, ys, bw)
     v = v / v.max() * width
     sgn = 1 if side == "right" else -1
     ax.fill_betweenx(ys, pos, pos + sgn * v, color=C.lighten(color, 1 - alpha), lw=0, zorder=2)

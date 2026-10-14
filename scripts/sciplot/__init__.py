@@ -1,7 +1,6 @@
 """sciplot — publication-grade, modern scientific figures (comp-neuro / NeuroAI).
 
-    import sys; sys.path.insert(0, "~/.claude/skills/scientific-figure/scripts")
-    import sciplot as sp
+    import sciplot as sp          # pip install, or sys.path.insert(0, "<skill-dir>/scripts")
 
     sp.use("clean", target="nature")                       # theme × venue
     fig, ax = sp.figure("nature", "double", height_mm=70, mosaic="AB;CD")

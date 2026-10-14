@@ -42,10 +42,7 @@ def save(fig, path, formats=("pdf", "png"), dpi=600, tight=False, transparent=Fa
                 extra.setdefault("pad_inches", 0.02)
             if fmt in ("tif", "tiff"):
                 extra.setdefault("pil_kwargs", {"compression": "tiff_lzw"})
-            if fmt in ("png", "tif", "tiff", "jpg"):
-                extra.setdefault("dpi", dpi)
-            else:
-                extra.setdefault("dpi", dpi)  # affects rasterized artists only
+            extra.setdefault("dpi", dpi)  # vector formats: affects rasterized artists only
             fig.savefig(p, format=fmt if fmt != "tif" else "tiff",
                         transparent=transparent, facecolor=fig.get_facecolor()
                         if not transparent else "none", **extra)

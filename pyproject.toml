@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sciplot-neuro"
+version = "1.0.0"
+description = "Publication-grade scientific figures for computational neuroscience and NeuroAI (matplotlib) — also a Claude skill."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Mohammad Ahadzadeh" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "matplotlib>=3.7"]
+keywords = [
+    "matplotlib", "scientific-figures", "neuroscience", "computational-neuroscience",
+    "neuroai", "data-visualization", "colorblind", "palettes", "claude-skill",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Matplotlib",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.optional-dependencies]
+color = ["cmcrameri", "cmasher", "colorspacious"]
+stats = ["scipy", "seaborn"]
+brain = ["nilearn", "mne"]
+all = ["sciplot-neuro[color,stats,brain]"]
+dev = ["pytest>=7", "ruff"]
+
+[project.urls]
+Homepage = "https://github.com/mmd-ahd/scientific-figure-skill"
+Documentation = "https://github.com/mmd-ahd/scientific-figure-skill/tree/main/docs"
+Issues = "https://github.com/mmd-ahd/scientific-figure-skill/issues"
+
+[tool.setuptools.packages.find]
+where = ["scripts"]
+include = ["sciplot*"]
+
+[tool.setuptools.package-data]
+sciplot = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::UserWarning"]
+
+[tool.ruff]
+line-length = 125
+target-version = "py39"
+extend-exclude = ["references", "examples", "assets", "styles"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E731", "E741", "E702", "E701"]

@@ -16,6 +16,7 @@ from matplotlib.patches import (Circle, FancyArrowPatch, FancyBboxPatch, Polygon
                                  Rectangle)
 
 from . import color as C
+from .palettes import cmap as _cmap
 
 
 def canvas(ax, width_mm=None, height_mm=None):
@@ -231,10 +232,9 @@ def mini_trace(ax, xy, w, h, kind="spikes", color="0.2", lw=0.6, seed=0):
 
 def mini_matrix(ax, xy, size, data=None, cmap="viridis", n=6, ec="white", lw=0.3, seed=0):
     """Tiny heatmap glyph (weights / RDM / attention icon)."""
-    import matplotlib as mpl
     rng = np.random.default_rng(seed)
     data = rng.random((n, n)) if data is None else np.asarray(data)
-    cm = mpl.colormaps[cmap] if isinstance(cmap, str) else cmap
+    cm = _cmap(cmap) if isinstance(cmap, str) else cmap
     n = data.shape[0]
     c = size / n
     for i in range(n):

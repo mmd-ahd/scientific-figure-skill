@@ -1,10 +1,13 @@
 """Nudge 'sp.*' categorical palettes in OKLCH to maximise min ΔE2000 under CVD
 while staying perceptually close to the designed seed colors."""
 import sys
+from pathlib import Path
+
 import numpy as np
-sys.path.insert(0, ".")
-from sciplot import color as C, palettes as P
-from sciplot.check import palette_report
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from sciplot import color as C, palettes as P  # noqa: E402
+from sciplot.check import palette_report  # noqa: E402
 
 TARGET = 11.0   # min ΔE2000 under each CVD type; stop pushing once reached
 
@@ -16,6 +19,7 @@ def score(cols, seeds, bg, max_drift):
     drift = max(drifts)
     pen = max(0, drift - max_drift) * 3 + 0.25 * float(np.mean(drifts))
     return min(cvd, TARGET) * 2 + 0.05 * min(r["normal"], 25) - pen, r, drift
+
 
 def tune(name, iters=4000, max_drift=8, seed=0):
     p = P.BANK[name]
@@ -42,6 +46,14 @@ def tune(name, iters=4000, max_drift=8, seed=0):
     print('   ', best)
     return best
 
-names = sys.argv[1:] or [k for k, v in P.BANK.items() if k.startswith("sp.") and v["kind"] == "cat"]
-for n in names:
-    tune(n)
+
+def main(argv=None):
+    """Usage: python tools/tune_originals.py [palette ...]  (default: all sp.* categorical)."""
+    argv = sys.argv[1:] if argv is None else argv
+    names = argv or [k for k, v in P.BANK.items() if k.startswith("sp.") and v["kind"] == "cat"]
+    for n in names:
+        tune(n)
+
+
+if __name__ == "__main__":
+    main()

@@ -7,10 +7,7 @@
 from __future__ import annotations
 
 import numpy as np
-from matplotlib.collections import Collection
 from matplotlib.colors import to_hex
-from matplotlib.lines import Line2D
-from matplotlib.patches import Patch
 from matplotlib.text import Text
 
 from . import color as C
@@ -20,6 +17,22 @@ MM = 1 / 25.4
 # Thresholds for categorical palettes (CIEDE2000)
 DE_OK = 10.0      # distinct categories under simulated CVD
 DE_GOOD = 20.0    # comfortable at small marker sizes
+
+# Non-perceptual rainbow maps that distort data (Crameri et al. 2020, Nat Commun)
+RAINBOW_CMAPS = {"jet", "rainbow", "hsv", "gist_rainbow", "gist_ncar", "nipy_spectral",
+                 "spectral", "spectral_r", "jet_r", "rainbow_r", "gist_rainbow_r"}
+ARIAL_LIKE = {"Arial", "Helvetica", "Liberation Sans", "Nimbus Sans", "Arimo"}
+
+
+def font_in_use(family=None) -> str:
+    """Name of the font matplotlib actually renders for `family` (default: current rc)."""
+    import matplotlib as mpl
+    from matplotlib import font_manager as fm
+    path = fm.findfont(fm.FontProperties(family=family or mpl.rcParams["font.family"]))
+    try:
+        return fm.get_font(path).family_name
+    except Exception:
+        return path
 
 
 def palette_report(colors, bg="#FFFFFF", verbose=True) -> dict:
@@ -149,6 +162,33 @@ def lint(fig, target=None, verbose=True) -> list[str]:
     if thin:
         warns.append(f"{thin} line(s)/spine(s) thinner than {lw_min} pt (may vanish in print)")
 
+    # --- fonts actually rendered (fallbacks are silent in matplotlib)
+    fonts = set()
+    for t in fig.findobj(Text):
+        if t.get_visible() and t.get_text().strip():
+            try:
+                fonts.add(font_in_use(t.get_fontfamily()))
+            except Exception:
+                pass
+    if spec.get("arial_only") and fonts - ARIAL_LIKE:
+        warns.append(f"{target} requires Arial; rendered with {sorted(fonts)} "
+                     "(install Arial or Liberation Sans)")
+    if "DejaVu Sans" in fonts and len(fonts) > 1:
+        warns.append(f"mixed fonts {sorted(fonts)}: a glyph or family fell back to DejaVu Sans")
+
+    # --- colormaps
+    bad_maps = set()
+    for ax in fig.axes:
+        for a in ax.get_children():
+            cm = getattr(a, "get_cmap", None)
+            if callable(cm) and getattr(a, "get_array", lambda: None)() is not None:
+                name = getattr(cm(), "name", "")
+                if name.lower() in RAINBOW_CMAPS:
+                    bad_maps.add(name)
+    if bad_maps:
+        warns.append(f"rainbow colormap(s) {sorted(bad_maps)} are not perceptually uniform; "
+                     "use viridis/cmc.batlow (sequential) or RdBu_r/cmc.vik (diverging)")
+
     # --- categorical colors
     cols = _artist_colors(fig)
     if 2 <= len(cols) <= 12:
@@ -168,4 +208,6 @@ def lint(fig, target=None, verbose=True) -> list[str]:
                 print("  •", w)
         else:
             print(f"lint {tag}— OK")
+        if fonts:
+            print(f"  font: {', '.join(sorted(fonts))}")
     return warns

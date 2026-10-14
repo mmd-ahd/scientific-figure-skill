@@ -71,7 +71,7 @@ def available_font(stack):
 
 
 def rc(theme="clean", target="nature", font="auto", palette=None, bg=None, scale=1.0,
-       grid=None, title_loc="left"):
+       grid=None, title_loc="left", resolve_font=True):
     """Build an rcParams dict (does not apply it)."""
     th = dict(THEMES[theme])
     v = VENUES[target]
@@ -80,7 +80,8 @@ def rc(theme="clean", target="nature", font="auto", palette=None, bg=None, scale
     if font == "auto":
         font = "arial" if v.get("arial_only") else "inter"
     stack = FONTS.get(font, [font] + FONTS["inter"])
-    fam = available_font(stack)
+    # resolve_font=False keeps the preferred family (used for the portable .mplstyle files)
+    fam = available_font(stack) if resolve_font else stack[0]
     base = v["font_base"] * scale
     tick = v["font_tick"] * scale
     big = target in ("poster", "slide", "graphical-abstract")
@@ -109,7 +110,8 @@ def rc(theme="clean", target="nature", font="auto", palette=None, bg=None, scale
         "legend.fontsize": tick, "legend.title_fontsize": base, "figure.titlesize": base + 2,
         "figure.titleweight": "bold",
         "mathtext.fontset": "custom", "mathtext.rm": fam, "mathtext.it": f"{fam}:italic",
-        "mathtext.bf": f"{fam}:bold", "mathtext.sf": fam, "mathtext.default": "regular",
+        "mathtext.bf": f"{fam}:bold", "mathtext.sf": fam, "mathtext.cal": fam,
+        "mathtext.tt": MONO[-1], "mathtext.default": "regular",
         "axes.formatter.use_mathtext": False, "axes.unicode_minus": True,
         "axes.formatter.limits": (-3, 4),
         # axes & ticks
@@ -204,7 +206,7 @@ def write_mplstyles(outdir=None):
     n = 0
     for th in THEMES:
         for tg in targets:
-            r = rc(th, tg)
+            r = rc(th, tg, resolve_font=False)
             lines = [f"# sciplot theme={th} target={tg} (generated; see scripts/sciplot/styles.py)"]
             for k, v in r.items():
                 if k == "axes.prop_cycle":

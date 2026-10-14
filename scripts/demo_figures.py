@@ -56,8 +56,7 @@ def make_data():
     n = 24
     lab = np.repeat([0, 1, 2], 8)
     X = rng.normal(0, 1, (n, 30)) + np.eye(3)[lab] @ rng.normal(0, 2.2, (3, 30))
-    from scipy.spatial.distance import pdist, squareform
-    D = squareform(pdist(X, "correlation"))
+    D = 1 - np.corrcoef(X)          # correlation distance
     # layer profile
     layers = ["conv1", "conv2", "conv3", "conv4", "conv5", "fc6", "fc7"]
     v1 = np.array([0.28, 0.41, 0.36, 0.30, 0.24, 0.18, 0.15])
@@ -83,17 +82,17 @@ def figure_main(theme="clean", target="nature", palette="sp.neuro", name="demo_n
     A = ax["a"]
     W, H = S.canvas(A)
     y0 = H * 0.42
-    b1 = S.box(A, (1, y0), 15, 11, "Stimulus", fc=sp.color.lighten(pal[0], 0.82, tc["bg"]),
-               ec=pal[0], text_color=pal[0])
+    S.box(A, (1, y0), 15, 11, "Stimulus", fc=sp.color.lighten(pal[0], 0.82, tc["bg"]),
+          ec=pal[0], text_color=pal[0])
     S.mini_trace(A, (3, y0 - 9), 11, 6, kind="wave", color=pal[0])
     net_x = 24
-    pos = S.network(A, [3, 5, 5, 2], xy=(net_x, H * 0.2), width=W * 0.38, height=H * 0.62,
-                    r=1.25, colors=["#FFFFFF", sp.color.lighten(pal[2], 0.6), sp.color.lighten(pal[2], 0.6), "#FFFFFF"],
-                    edge_color=sp.color.mix(tc["bg"], tc["muted"], 0.45), node_ec=tc["fg"])
+    S.network(A, [3, 5, 5, 2], xy=(net_x, H * 0.2), width=W * 0.38, height=H * 0.62,
+              r=1.25, colors=["#FFFFFF", sp.color.lighten(pal[2], 0.6), sp.color.lighten(pal[2], 0.6), "#FFFFFF"],
+              edge_color=sp.color.mix(tc["bg"], tc["muted"], 0.45), node_ec=tc["fg"])
     A.text(net_x + W * 0.19, H * 0.9, "Recurrent network", ha="center", va="center",
            fontsize=plt.rcParams["font.size"], color=tc["fg"], weight="medium")
-    b3 = S.box(A, (W - 17, y0), 16, 11, "Choice", fc=sp.color.lighten(pal[1], 0.82, tc["bg"]),
-               ec=pal[1], text_color=sp.color.darken(pal[1], 0.15))
+    S.box(A, (W - 17, y0), 16, 11, "Choice", fc=sp.color.lighten(pal[1], 0.82, tc["bg"]),
+          ec=pal[1], text_color=sp.color.darken(pal[1], 0.15))
     S.arrow(A, (16.8, y0 + 5.5), (net_x - 2, y0 + 5.5), color=tc["muted"], lw=0.7)
     S.arrow(A, (net_x + W * 0.38 + 2, y0 + 5.5), (W - 17.8, y0 + 5.5), color=tc["muted"], lw=0.7)
     S.mini_matrix(A, (W - 14, y0 - 10), 7, cmap="cmc.batlow", n=5)
@@ -289,8 +288,12 @@ def figure_slide(name="demo_slide_dark"):
 # ---------------------------------------------------------------- figure 4: brain-viz presets
 def figure_brain(name="demo_brainviz"):
     sp.use("clean", target="nature")
-    import mne
-    from nilearn import datasets, image, plotting
+    try:
+        import mne
+        from nilearn import datasets, image, plotting
+    except ImportError:
+        print("skipping demo_brainviz (needs `pip install nilearn mne`)")
+        return []
     fig, ax = sp.figure("nature", "double", height_mm=48, mosaic=[["a", "b", "c"]],
                         width_ratios=[2.2, 1, 1])
     tpl = datasets.load_mni152_template(resolution=2)

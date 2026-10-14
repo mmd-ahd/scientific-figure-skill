@@ -453,7 +453,6 @@ def semantic(name) -> dict[str, str]:
 def cmap(name, n=None, reverse=False):
     """Colormap from: bank palettes (smooth OKLab interpolation), 'cmc.*' (cmcrameri),
     'cmr.*' (cmasher), seaborn names, or matplotlib names. `_r` suffix reverses."""
-    import matplotlib as mpl
     from matplotlib.colors import LinearSegmentedColormap, ListedColormap
     if name.endswith("_r") and name[:-2] in all_palettes():
         name, reverse = name[:-2], not reverse
@@ -472,18 +471,49 @@ def cmap(name, n=None, reverse=False):
             if "bad" in p:
                 cm.set_bad(p["bad"])
     else:
-        if name.startswith("cmc."):
-            import cmcrameri.cm  # noqa: F401  registers 'cmc.*'
-        elif name.startswith("cmr."):
-            import cmasher  # noqa: F401  registers 'cmr.*'
-        elif name in ("mako", "rocket", "icefire", "vlag", "crest", "flare"):
-            import seaborn  # noqa: F401
-        cm = mpl.colormaps[name]
+        cm = _external_cmap(name)
     if reverse:
         cm = cm.reversed()
     if n is not None:
         cm = cm.resampled(n)
     return cm
+
+
+_FALLBACK = {"seq": "viridis", "div": "RdBu_r", "cyc": "twilight", "cat": "tab10"}
+_WARNED = set()
+
+
+def _external_cmap(name):
+    """Resolve a colormap from matplotlib or an optional package (cmcrameri, cmasher,
+    seaborn). If the package is missing, fall back to a perceptual built-in map of the
+    same kind (warns once per name) so code never breaks on a minimal install."""
+    import matplotlib as mpl
+    pkg = None
+    if name.startswith("cmc."):
+        pkg = "cmcrameri.cm"            # registers 'cmc.*'
+    elif name.startswith("cmr."):
+        pkg = "cmasher"                 # registers 'cmr.*'
+    elif name.removesuffix("_r") in ("mako", "rocket", "icefire", "vlag", "crest", "flare"):
+        pkg = "seaborn"
+    if pkg is not None:
+        try:
+            __import__(pkg)
+        except ImportError:
+            pass
+    try:
+        return mpl.colormaps[name]
+    except KeyError:
+        if pkg is None:
+            raise
+    base = name.removesuffix("_r")
+    kind = CMAPS.get(base, ("seq",))[0]
+    alt = _FALLBACK.get(kind, "viridis") + ("_r" if name.endswith("_r") else "")
+    if name not in _WARNED:
+        import warnings
+        _WARNED.add(name)
+        warnings.warn(f"colormap {name!r} needs `pip install {pkg.split('.')[0]}`; "
+                      f"using {alt!r} instead", stacklevel=3)
+    return mpl.colormaps[alt]
 
 
 def register_all(prefix="sp."):
@@ -497,6 +527,40 @@ def register_all(prefix="sp."):
                 mpl.colormaps.register(cmap(k).reversed(), name=nm + "_r")
             except Exception:
                 pass
+    _register_fallbacks()
+
+
+def _register_fallbacks():
+    """If cmcrameri / cmasher are not installed, register their catalog names ('cmc.batlow',
+    'cmr.ember', ...) as aliases of built-in maps of the same kind, so recipes and user code
+    that pass those names to matplotlib keep working. One summary warning is emitted."""
+    import matplotlib as mpl
+    missing = {}
+    for prefix, pkg in (("cmc.", "cmcrameri.cm"), ("cmr.", "cmasher")):
+        try:
+            __import__(pkg)
+        except ImportError:
+            missing[prefix] = pkg.split(".")[0]
+    if not missing:
+        return
+    added = []
+    for name, (kind, _tags) in CMAPS.items():
+        prefix = name[:4]
+        if prefix not in missing or name in mpl.colormaps:
+            continue
+        alt = mpl.colormaps[_FALLBACK.get(kind, "viridis")]
+        try:
+            mpl.colormaps.register(alt.copy(), name=name)
+            mpl.colormaps.register(alt.reversed(), name=name + "_r")
+            added.append(name)
+        except ValueError:
+            pass
+    if added and "_fallbacks" not in _WARNED:
+        import warnings
+        _WARNED.add("_fallbacks")
+        warnings.warn("optional colormap packages not installed (" + ", ".join(missing.values())
+                      + "): their maps are aliased to viridis/RdBu_r/twilight. "
+                      "`pip install cmcrameri cmasher` for the real ones.", stacklevel=3)
 
 
 def search(kind=None, mood=None, bg=None, family=None, cvd_safe=None, min_n=None, text=None):

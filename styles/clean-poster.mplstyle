@@ -37,6 +37,8 @@ mathtext.rm: Inter
 mathtext.it: Inter:italic
 mathtext.bf: Inter:bold
 mathtext.sf: Inter
+mathtext.cal: Inter
+mathtext.tt: DejaVu Sans Mono
 mathtext.default: regular
 axes.formatter.use_mathtext: False
 axes.unicode_minus: True
