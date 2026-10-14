@@ -92,6 +92,7 @@ def label_point(ax, x, y, text, dx=6, dy=6, color=None, arrow=False, **kw):
 
 
 def stars(p) -> str:
+    """P value -> '*' / '**' / '***' / '****' / 'n.s.'."""
     return "****" if p < 1e-4 else "***" if p < 1e-3 else "**" if p < 1e-2 else "*" if p < 0.05 else "n.s."
 
 

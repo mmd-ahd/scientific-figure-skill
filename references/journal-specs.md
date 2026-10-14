@@ -39,7 +39,8 @@ Full sourced notes: `references/research-report.md`.
 | Cell submission | `("pdf", "tiff")`, `dpi=600` | Font must be Arial: `sp.use(..., target="cell")` auto-picks Arial, falling back to Liberation Sans (metric-identical). |
 
 ## Fonts
-Nature says "preferably Helvetica or Arial", Cell/PLOS require Arial. On this machine there is no Arial/Helvetica;
-`font="arial"` resolves to **Liberation Sans** (Arial-metric clone). Modern alternative for venues that only
-*prefer* Helvetica/Arial: **Inter** (default), Geist, IBM Plex Sans, Source Sans 3 (all OFL, installed in
-`~/.local/share/fonts`). Mathtext is configured to use the same font (no DejaVu fallback).
+Nature says "preferably Helvetica or Arial", Cell/PLOS require Arial. `font="arial"` uses Arial or Helvetica when
+installed and otherwise **Liberation Sans** (Arial-metric clone, common on Linux). Modern alternative for venues that
+only *prefer* Helvetica/Arial: **Inter** (default), Geist, IBM Plex Sans, Source Sans 3 (all OFL; install Inter with
+`python scripts/install_fonts.py`). Missing fonts fall back down the stack (… → DejaVu Sans); `sp.check.lint` prints
+the font actually rendered and warns when an Arial-only venue is not met. Mathtext uses the same font.

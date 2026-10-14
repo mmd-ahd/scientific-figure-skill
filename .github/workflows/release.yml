@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build skill zip
+        run: bash scripts/tools/build_skill_zip.sh dist
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build Python package
+        run: |
+          pip install build
+          python -m build --outdir dist
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/scientific-figure.zip
+            dist/*.whl
+            dist/*.tar.gz
+          generate_release_notes: true

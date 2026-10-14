@@ -62,6 +62,7 @@ BACKGROUNDS = P.BACKGROUNDS
 
 
 def available_font(stack):
+    """First family in `stack` that matplotlib can find (else 'DejaVu Sans')."""
     from matplotlib import font_manager as fm
     have = {f.name for f in fm.fontManager.ttflist}
     for f in stack:

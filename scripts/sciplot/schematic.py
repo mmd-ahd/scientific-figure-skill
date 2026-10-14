@@ -93,6 +93,7 @@ def pill(ax, xy, w=None, h=None, text=None, **kw):
 
 
 def circle(ax, xy, r, fc="#FFFFFF", ec="0.2", lw=0.6, text=None, fontsize=None, zorder=3, **kw):
+    """Circle (node) of radius `r` mm at `xy`, with optional centred label."""
     p = Circle(xy, r, fc=fc, ec=ec, lw=lw, zorder=zorder, **kw)
     ax.add_patch(p)
     if text:

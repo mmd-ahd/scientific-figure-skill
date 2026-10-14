@@ -406,17 +406,20 @@ def _cvd() -> dict:
 
 
 def all_palettes() -> dict:
+    """Every palette in the bank (originals + imported), name -> spec dict."""
     out = dict(_imported())
     out.update(BANK)
     return out
 
 
 def names(kind=None, family=None) -> list[str]:
+    """Palette names, optionally filtered by kind ('cat'|'seq'|'div') and family."""
     return sorted(k for k, v in all_palettes().items()
                   if (kind is None or v["kind"] == kind) and (family is None or v["family"] == family))
 
 
 def info(name) -> dict:
+    """Spec of one palette: colors, kind, family, mood, source and measured CVD ΔE / safe_n."""
     d = dict(all_palettes()[name])
     if name in _cvd():
         d["measured"] = _cvd()[name]
@@ -447,6 +450,7 @@ def get(name, n=None, ordered=True) -> list[str]:
 
 
 def semantic(name) -> dict[str, str]:
+    """Fixed meaning -> colour mapping, e.g. semantic('neuro.ei')['excitatory']."""
     return dict(SEMANTIC[name])
 
 

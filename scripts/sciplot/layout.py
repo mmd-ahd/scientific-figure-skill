@@ -93,6 +93,7 @@ for _alias, _base in {"nature-neuroscience": "nature-research", "nn": "nature-re
 
 
 def width_mm(target="nature", width="single") -> float:
+    """Figure width in mm for a venue and a named width ('single', 'double', …) or a number."""
     if isinstance(width, (int, float)):
         return float(width)
     return VENUES[target]["widths_mm"][width]
@@ -138,6 +139,7 @@ def figure(target="nature", width="single", height_mm=None, aspect=None, mosaic=
 
 
 def panel_letters(n, case="lower"):
+    """First `n` panel letters, 'lower' (a, b, …) or 'upper' (A, B, …)."""
     s = string.ascii_lowercase if case == "lower" else string.ascii_uppercase
     return list(s[:n])
 
@@ -252,6 +254,7 @@ def trim_spines(ax):
 
 
 def max_ticks(ax, n=4, axis="both"):
+    """Limit an axis to about `n` major ticks at 'nice' values."""
     from matplotlib.ticker import MaxNLocator
     if axis in ("x", "both"):
         ax.xaxis.set_major_locator(MaxNLocator(n))
@@ -260,6 +263,7 @@ def max_ticks(ax, n=4, axis="both"):
 
 
 def no_axes(ax):
+    """Hide spines, ticks and labels (images, schematics, embeddings)."""
     ax.set_axis_off()
 
 

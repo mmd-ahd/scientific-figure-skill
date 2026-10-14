@@ -19,6 +19,7 @@ def to_rgb(c) -> np.ndarray:
 
 
 def to_hex(rgb) -> str:
+    """RGB array in [0, 1] -> '#RRGGBB'."""
     rgb = np.clip(np.asarray(rgb, float), 0, 1)
     return "#" + "".join(f"{int(round(v * 255)):02X}" for v in rgb[:3])
 
@@ -42,28 +43,33 @@ _M2 = np.array([[0.2104542553, 0.7936177850, -0.0040720468],
 
 
 def rgb_to_oklab(rgb):
+    """sRGB [0, 1] -> OKLab (L, a, b)."""
     lms = _srgb_to_linear(rgb) @ _M1.T
     return np.cbrt(lms) @ _M2.T
 
 
 def oklab_to_rgb(lab, clip=True):
+    """OKLab -> sRGB [0, 1] (clipped by default)."""
     lms = (np.asarray(lab, float) @ np.linalg.inv(_M2).T) ** 3
     rgb = _linear_to_srgb(lms @ np.linalg.inv(_M1).T)
     return np.clip(rgb, 0, 1) if clip else rgb
 
 
 def rgb_to_oklch(rgb):
+    """sRGB [0, 1] -> OKLCH (L, C, h in degrees)."""
     L, a, b = np.moveaxis(rgb_to_oklab(rgb), -1, 0)
     return np.stack([L, np.hypot(a, b), np.degrees(np.arctan2(b, a)) % 360], -1)
 
 
 def oklch_to_rgb(lch, clip=True):
+    """OKLCH -> sRGB [0, 1] (clipped by default)."""
     L, C, h = np.moveaxis(np.asarray(lch, float), -1, 0)
     hr = np.radians(h)
     return oklab_to_rgb(np.stack([L, C * np.cos(hr), C * np.sin(hr)], -1), clip=clip)
 
 
 def in_gamut(lch, eps=1e-4) -> bool:
+    """Whether an OKLCH triple maps inside sRGB."""
     rgb = oklch_to_rgb(lch, clip=False)
     return bool(np.all(rgb >= -eps) and np.all(rgb <= 1 + eps))
 
@@ -95,6 +101,7 @@ def delta_e(c1, c2) -> float:
 
 
 def de2000_lab(lab1, lab2) -> float:
+    """CIEDE2000 difference between two CIELAB colours."""
     L1, a1, b1 = lab1
     L2, a2, b2 = lab2
     C1, C2 = np.hypot(a1, b1), np.hypot(a2, b2)
@@ -181,6 +188,7 @@ def grayscale(colors):
 # ----------------------------------------------------------------- contrast
 
 def luminance(c) -> float:
+    """WCAG relative luminance of a colour (0-1)."""
     r, g, b = _srgb_to_linear(to_rgb(c))
     return float(0.2126 * r + 0.7152 * g + 0.0722 * b)
 
@@ -225,6 +233,7 @@ def lighten(c, amount=0.5, bg="#FFFFFF") -> str:
 
 
 def darken(c, amount=0.3) -> str:
+    """Darken a colour in OKLCH lightness by `amount` (0-1)."""
     L, C, h = rgb_to_oklch(to_rgb(c))
     return oklch(L * (1 - amount), C, h)
 
@@ -242,6 +251,7 @@ def tints(c, k=5, lo=0.15, hi=0.85, bg="#FFFFFF") -> list[str]:
 
 
 def desaturate(c, amount=0.5) -> str:
+    """Reduce OKLCH chroma by `amount` (0-1)."""
     L, C, h = rgb_to_oklch(to_rgb(c))
     return oklch(L, C * (1 - amount), h)
 

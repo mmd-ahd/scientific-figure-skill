@@ -75,4 +75,5 @@ def pdffonts(path):
 
 
 def close(fig=None):
+    """Close `fig` (or all figures)."""
     plt.close(fig if fig is not None else "all")

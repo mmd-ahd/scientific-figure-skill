@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software in a publication or talk, please cite it as below."
+title: "scientific-figure: publication-grade figures for computational neuroscience and NeuroAI"
+abstract: >-
+  A Claude skill and standalone matplotlib library (sciplot) for journal-exact multi-panel
+  figures, CVD-measured colour palettes, comp-neuro/NeuroAI panel recipes and automatic
+  figure linting.
+type: software
+authors:
+  - family-names: Ahadzadeh
+    given-names: Mohammad
+    affiliation: "School of Cognitive Sciences, Institute for Research in Fundamental Sciences (IPM)"
+version: 1.0.0
+date-released: 2026-10-14
+license: MIT
+repository-code: "https://github.com/mmd-ahd/scientific-figure-skill"
+keywords:
+  - scientific visualization
+  - matplotlib
+  - computational neuroscience
+  - NeuroAI
+  - color-vision deficiency
+  - Claude skill

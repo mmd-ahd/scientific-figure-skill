@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ruff
+      - run: ruff check .
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+        deps: [minimal, all]
+        exclude:
+          - python-version: "3.10"
+            deps: all
+          - python-version: "3.11"
+            deps: all
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install (${{ matrix.deps }})
+        run: |
+          python -m pip install --upgrade pip
+          if [ "${{ matrix.deps }}" = "all" ]; then pip install ".[all,dev]"; else pip install ".[dev]"; fi
+      - name: Unit tests
+        run: pytest -q
+      - name: Reference figures (visual regression smoke test)
+        run: |
+          python scripts/demo_figures.py "$RUNNER_TEMP/demo" | tee demo.log
+          python scripts/recipe_gallery.py "$RUNNER_TEMP/demo"
+          ! grep -q "warning(s)" demo.log
+      - uses: actions/upload-artifact@v4
+        if: matrix.python-version == '3.12'
+        with:
+          name: figures-${{ matrix.deps }}
+          path: ${{ runner.temp }}/demo
+
+  skill-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate SKILL.md frontmatter
+        run: |
+          python - <<'PY'
+          import re, sys
+          s = open("SKILL.md").read()
+          fm = re.match(r"---\n(.*?)\n---\n", s, re.S).group(1)
+          name = re.search(r"^name: (.+)$", fm, re.M).group(1).strip()
+          desc = re.search(r"^description: (.+)$", fm, re.M).group(1).strip()
+          assert name == "scientific-figure", name
+          assert len(desc) <= 1024, f"description is {len(desc)} chars"
+          print("SKILL.md ok:", name, len(desc), "chars")
+          PY
+      - name: Build skill zip
+        run: bash scripts/tools/build_skill_zip.sh dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: scientific-figure-skill
+          path: dist/scientific-figure.zip

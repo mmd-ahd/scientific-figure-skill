@@ -5,10 +5,21 @@ description: Build publication-grade, modern, beautiful scientific figures with 
 
 # Scientific figures (sciplot)
 
-Library: `~/.claude/skills/scientific-figure/scripts/sciplot` (pure matplotlib; uses cmcrameri/cmasher/
-colorspacious when present). Run with the **neuroai** env: `~/miniforge3/envs/neuroai/bin/python`.
-Fonts installed in `~/.local/share/fonts`: Inter, Inter Display, Geist(+Mono), IBM Plex Sans, Source Sans 3,
-DM Sans, JetBrains Mono. Liberation Sans stands in for Arial.
+`sciplot` is a pure-matplotlib library that ships with this skill in `scripts/sciplot` (paths below are relative
+to the directory containing this SKILL.md, called `<skill-dir>`).
+
+## Setup (once per session)
+1. Pick the user's Python (their project venv/conda env if there is one, else `python3`) and check:
+   `python -c "import sciplot, matplotlib, numpy"`.
+2. If `sciplot` is missing, either `pip install <skill-dir>` (adds `import sciplot` everywhere) or put
+   `sys.path.insert(0, "<skill-dir>/scripts")` at the top of the script. Needs only numpy + matplotlib ≥ 3.7.
+3. Optional extras, used automatically when present: `cmcrameri cmasher colorspacious` (Crameri/CMasher maps;
+   without them `cmc.*`/`cmr.*` names fall back to viridis/RdBu_r/twilight with a warning), `scipy`, `seaborn`,
+   `nilearn mne` (brain-viz). Install them only if the user agrees or the env already has them.
+4. Fonts: Inter is preferred; it is optional. `python <skill-dir>/scripts/install_fonts.py --list` shows what
+   matplotlib sees; `install_fonts.py` (no flag) installs Inter + JetBrains Mono for the user. Otherwise the stack
+   falls back (Helvetica → Arial → Liberation Sans → DejaVu Sans) and `lint` reports the font actually used —
+   mention it in the deliverable.
 
 ## Workflow (follow every time)
 1. **Message & venue.** Write the one-sentence message of the figure and of each panel. Identify the target
@@ -35,25 +46,34 @@ DM Sans, JetBrains Mono. Liberation Sans stands in for Arial.
 
 ## Quickstart
 ```python
-import sys; sys.path.insert(0, "/home/mohammad/.claude/skills/scientific-figure/scripts")
-import numpy as np, sciplot as sp
-from sciplot import neuro, schematic as S
+import numpy as np
+import sciplot as sp                      # or: sys.path.insert(0, "<skill-dir>/scripts")
+from sciplot import neuro
+
+rng = np.random.default_rng(0)            # toy data — replace with the user's
+t = np.linspace(-0.5, 1.5, 200)
+Y_ctrl = 5 + rng.normal(0, 1, (30, 200))
+Y_opto = Y_ctrl + 8 * np.exp(-((t - 0.3) / 0.15) ** 2)
+D = 1 - np.corrcoef(rng.normal(size=(16, 40)) + np.repeat(np.eye(2), 8, 0) @ rng.normal(0, 2, (2, 40)))
+a, b = rng.normal(0.55, 0.08, 12), rng.normal(0.70, 0.08, 12)
 
 sp.use("clean", target="nature", palette="sp.neuro")
 pal, tc = sp.colors("sp.neuro"), sp.theme_colors()
 fig, ax = sp.figure("nature", "double", height_mm=60, mosaic="ABC", width_ratios=[1.2, 1, 1])
 neuro.mean_ci(ax["A"], t, Y_ctrl, tc["context"], label="Control")
 neuro.mean_ci(ax["A"], t, Y_opto, pal[0], label="Opto")
-sp.annotate.shade(ax["A"], 0, 0.5, label="stim"); sp.label_lines(ax["A"])
+sp.shade(ax["A"], 0, 0.5, label="stim"); sp.label_lines(ax["A"])
 ax["A"].set(xlabel="Time from onset (s)", ylabel="Firing rate (Hz)")
 neuro.rdm(ax["B"], D, groups=[(0, 8, "faces"), (8, 16, "objects")])
 neuro.dots_and_summary(ax["C"], [a, b], [tc["context"], pal[0]], labels=["Ctrl", "Opto"])
-sp.sig_bracket(ax["C"], 0, 1, y=0.9, text=p_value)
+sp.sig_bracket(ax["C"], 0, 1, y=0.9, text=0.004)
+ax["C"].set_ylabel("Decoding accuracy")
 sp.align_labels(fig); sp.label_panels(fig, ax)
 sp.save(fig, "figures/fig2", formats=("pdf", "svg", "png"), target="nature")
 ```
 Full worked examples: `scripts/demo_figures.py` (Nature 7-panel, NeurIPS editorial, dark slide, graphical abstract,
-nilearn+MNE brain panel); rendered outputs in `examples/`.
+nilearn+MNE brain panel) and `scripts/recipe_gallery.py` (one panel per recipe, all themes); rendered outputs in
+`examples/` — Read `examples/recipe_gallery.png` to see what each recipe looks like.
 
 ## API cheat-sheet
 | Need | Call |
@@ -69,12 +89,13 @@ nilearn+MNE brain panel); rendered outputs in `examples/`.
 | Neuro recipes | `neuro.mean_ci, raster, psth, activity_heatmap, rdm, trajectories, style_3d, gradient_line, embedding, axis_arrows, dots_and_summary, raincloud, half_violin, layer_profile, tuning_curve, connectivity, learning_curves, image_panel` |
 | Brain-viz | `neuro.nilearn_kwargs(kind)`, `neuro.mne_topomap_kwargs()`, `neuro.pycortex_quickflat_kwargs()`, `neuro.pyvista_theme(dark)`, `neuro.normalize_text(fig)` |
 | Schematics (mm canvas) | `S.canvas(ax)`, `S.box(ax, xy, w=None, h=None, text, fc, anchor="ll"/"c")` (auto-size), `S.pill`, `S.circle`, `S.arrow(p1, p2, rad, style)`, `S.connect(a, b, sides)`, `S.pipeline`, `S.network(layers)`, `S.recurrent_unit`, `S.layer_stack`, `S.prism`, `S.mini_trace`, `S.mini_matrix`, `S.gradient_box`, `S.bracket` |
-| Export & QA | `sp.save(fig, path, formats, dpi=600, target)`, `sp.preview(fig)`, `sp.export.pdffonts(pdf)`, `sp.check.lint(fig, target)`, `sp.check.palette_report(colors)` |
-| No-package use | `plt.style.use("~/.claude/skills/scientific-figure/styles/<theme>-<target>.mplstyle")` |
+| Export & QA | `sp.save(fig, path, formats, dpi=600, target)`, `sp.preview(fig)`, `sp.export.pdffonts(pdf)`, `sp.check.lint(fig, target)`, `sp.check.font_in_use()`, `sp.check.palette_report(colors)` |
+| No-package use | `plt.style.use("<skill-dir>/styles/<theme>-<target>.mplstyle")` |
 
 ## Decision rules (defaults Claude should apply without asking)
 - **Background white** for journals; `paper`/`dark` only for web, posters, slides.
-- **Font**: Inter by default; Arial-clone (Liberation Sans) automatically for `cell`/`neuron`/`plos`; mention it.
+- **Font**: Inter by default; Arial (or its clone Liberation Sans) automatically for `cell`/`neuron`/`plos`; report
+  the font `lint` printed.
 - **Sizes**: Nature family 5–7 pt (base 7, ticks 6, letters 8 bold lowercase); Cell 6–8 pt capitals; slides ≥ 14 pt.
 - **Strokes**: axes 0.6 pt, data 1.0 pt in print (NComms ≥ 1 pt); markers ~3.5 pt.
 - **Colours per panel ≤ 5**; more → highlight + grey, shades of a hue, or small multiples.
@@ -100,4 +121,6 @@ nilearn+MNE brain panel); rendered outputs in `examples/`.
 - Rebuild palette measurements/gallery/catalog after editing palettes: `python scripts/palette_gallery.py`.
 - Re-import upstream palettes: `python scripts/tools/build_imported_palettes.py <downloads-dir>` (sources in its docstring).
 - Regenerate `.mplstyle` files: `python -c "import sciplot.styles as s; s.write_mplstyles()"` (from `scripts/`).
-- Regression check: `python scripts/demo_figures.py /tmp/out` → all lints OK, then view the PNGs.
+- Regenerate `docs/api.md` after changing signatures/docstrings: `python scripts/tools/gen_api_docs.py`.
+- Build the claude.ai upload zip: `bash scripts/tools/build_skill_zip.sh dist`.
+- Regression check: `pytest` and `python scripts/demo_figures.py <tmpdir>` → all lints OK, then view the PNGs.
