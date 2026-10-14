@@ -15,7 +15,7 @@ import matplotlib as mpl
 from matplotlib.collections import LineCollection
 
 from . import color as C
-from .annotate import scale_bar
+from .annotate import scale_bar, slim_colorbar
 
 
 # ------------------------------------------------------------- time series
@@ -177,6 +177,8 @@ def rdm(ax, D, labels=None, cmap="cmc.batlow", vmin=None, vmax=None, groups=None
             if gap_lw:
                 ax.axhline(b - 0.5, color="white", lw=gap_lw)
                 ax.axvline(b - 0.5, color="white", lw=gap_lw)
+    if colorbar:
+        slim_colorbar(ax.figure, im, ax, label=colorbar if isinstance(colorbar, str) else None)
     return im
 
 

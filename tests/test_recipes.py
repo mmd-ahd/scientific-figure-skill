@@ -38,7 +38,8 @@ def test_matrices(sp):
     fig, ax = sp.figure("nature", "double", height_mm=50, mosaic="ABC")
     neuro.activity_heatmap(ax["A"], rng.random((30, 40)), zscore=True)
     D = 1 - np.corrcoef(rng.normal(size=(12, 20)))
-    neuro.rdm(ax["B"], D, groups=[(0, 6, "faces"), (6, 12, "objects")])
+    neuro.rdm(ax["B"], D, groups=[(0, 6, "faces"), (6, 12, "objects")], colorbar="1 - r")
+    assert len(ax["B"].child_axes) == 1  # colorbar=True/str adds a slim inset colorbar
     neuro.connectivity(ax["C"], rng.normal(size=(10, 10)), ei_split=8)
 
 
