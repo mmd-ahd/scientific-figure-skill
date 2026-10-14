@@ -1,0 +1,101 @@
+# sciplot theme=dark target=cell (generated; see scripts/sciplot/styles.py)
+figure.facecolor: 0E1117
+savefig.facecolor: 0E1117
+axes.facecolor: 0E1117
+figure.dpi: 150
+savefig.dpi: 600
+savefig.transparent: False
+figure.constrained_layout.use: True
+figure.constrained_layout.h_pad: 0.02
+figure.constrained_layout.w_pad: 0.02
+font.family: sans-serif
+font.sans-serif: Liberation Sans, Arial, Helvetica, Nimbus Sans, DejaVu Sans
+font.monospace: JetBrains Mono, IBM Plex Mono, Geist Mono, DejaVu Sans Mono
+font.size: 7.0
+text.color: E6E8EB
+axes.labelsize: 7.0
+axes.titlesize: 7.5
+axes.titleweight: medium
+axes.titlelocation: left
+axes.titlepad: 4.0
+axes.titlecolor: E6E8EB
+axes.labelcolor: E6E8EB
+axes.labelpad: 2.5
+axes.labelweight: normal
+xtick.labelsize: 6.0
+ytick.labelsize: 6.0
+xtick.color: 8B95A5
+ytick.color: 8B95A5
+xtick.labelcolor: AEB6C2
+ytick.labelcolor: AEB6C2
+legend.fontsize: 6.0
+legend.title_fontsize: 7.0
+figure.titlesize: 9.0
+figure.titleweight: bold
+mathtext.fontset: custom
+mathtext.rm: Liberation Sans
+mathtext.it: Liberation Sans:italic
+mathtext.bf: Liberation Sans:bold
+mathtext.sf: Liberation Sans
+mathtext.default: regular
+axes.formatter.use_mathtext: False
+axes.unicode_minus: True
+axes.formatter.limits: -3, 4
+axes.linewidth: 0.6
+axes.edgecolor: 8B95A5
+axes.spines.top: False
+axes.spines.right: False
+axes.spines.left: True
+axes.spines.bottom: True
+xtick.direction: out
+ytick.direction: out
+xtick.major.size: 2.5
+ytick.major.size: 0
+xtick.major.width: 0.6
+ytick.major.width: 0.6
+xtick.minor.size: 1.5
+ytick.minor.size: 1.5
+xtick.minor.width: 0.48
+ytick.minor.width: 0.48
+xtick.major.pad: 2.0
+ytick.major.pad: 3.0
+xtick.minor.visible: False
+ytick.minor.visible: False
+axes.xmargin: 0.02
+axes.ymargin: 0.04
+axes.autolimit_mode: data
+axes.axisbelow: True
+lines.linewidth: 1.0
+lines.markersize: 3.5
+lines.markeredgewidth: 0.6
+lines.solid_capstyle: round
+lines.dash_capstyle: round
+lines.dashed_pattern: 3.2, 1.8
+patch.linewidth: 0.6
+patch.edgecolor: E6E8EB
+patch.force_edgecolor: False
+hatch.linewidth: 0.48
+scatter.edgecolors: none
+errorbar.capsize: 0
+boxplot.flierprops.markersize: 2
+image.cmap: magma
+image.interpolation: nearest
+axes.prop_cycle: cycler('color', ['488EFF', 'F1738D', 'A2D085', 'ECA937', 'AF9DD2', '9CDCFF'])
+legend.frameon: False
+legend.handlelength: 1.4
+legend.handletextpad: 0.5
+legend.borderaxespad: 0.3
+legend.labelspacing: 0.35
+legend.columnspacing: 1.0
+legend.markerscale: 1.0
+legend.labelcolor: E6E8EB
+axes.grid: True
+grid.linewidth: 0.48
+grid.color: 1E2430
+grid.linestyle: -
+grid.alpha: 1.0
+pdf.fonttype: 42
+ps.fonttype: 42
+svg.fonttype: none
+path.simplify: True
+axes.grid.axis: y

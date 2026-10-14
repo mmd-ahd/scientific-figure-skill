@@ -1,0 +1,2516 @@
+{
+ "tol.bright": {
+  "colors": [
+   "#4477AA",
+   "#EE6677",
+   "#228833",
+   "#CCBB44",
+   "#66CCEE",
+   "#AA3377",
+   "#BBBBBB"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "cvd_claim": true
+ },
+ "tol.vibrant": {
+  "colors": [
+   "#EE7733",
+   "#0077BB",
+   "#33BBEE",
+   "#EE3377",
+   "#CC3311",
+   "#009988",
+   "#BBBBBB"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "cvd_claim": true
+ },
+ "tol.muted": {
+  "colors": [
+   "#CC6677",
+   "#332288",
+   "#DDCC77",
+   "#117733",
+   "#88CCEE",
+   "#882255",
+   "#44AA99",
+   "#999933",
+   "#AA4499",
+   "#DDDDDD"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "cvd_claim": true
+ },
+ "tol.high_contrast": {
+  "colors": [
+   "#000000",
+   "#004488",
+   "#BB5566",
+   "#DDAA33"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "cvd_claim": true
+ },
+ "tol.medium_contrast": {
+  "colors": [
+   "#6699CC",
+   "#004488",
+   "#EECC66",
+   "#997700",
+   "#EE99AA",
+   "#994455"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "cvd_claim": true
+ },
+ "tol.pale": {
+  "colors": [
+   "#BBCCEE",
+   "#FFCCCC",
+   "#CCDDAA",
+   "#EEEEBB",
+   "#CCEEFF",
+   "#DDDDDD"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "cvd_claim": true
+ },
+ "tol.light": {
+  "colors": [
+   "#77AADD",
+   "#EE8866",
+   "#EEDD88",
+   "#FFAABB",
+   "#99DDFF",
+   "#44BB99",
+   "#BBCC33",
+   "#AAAA00",
+   "#DDDDDD"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "cvd_claim": true
+ },
+ "tol.dark": {
+  "colors": [
+   "#222255",
+   "#663333",
+   "#225522",
+   "#666633",
+   "#225555",
+   "#555555"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "cvd_claim": true
+ },
+ "tol.sunset": {
+  "colors": [
+   "#364B9A",
+   "#4A7BB7",
+   "#6EA6CD",
+   "#98CAE1",
+   "#C2E4EF",
+   "#EAECCC",
+   "#FEDA8B",
+   "#FDB366",
+   "#F67E4B",
+   "#DD3D2D",
+   "#A50026"
+  ],
+  "kind": "div",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "bad": "#FFFFFF",
+  "cvd_claim": true
+ },
+ "tol.nightfall": {
+  "colors": [
+   "#125A56",
+   "#00767B",
+   "#238F9D",
+   "#42A7C6",
+   "#60BCE9",
+   "#9DCCEF",
+   "#C6DBED",
+   "#DEE6E7",
+   "#ECEADA",
+   "#F0E6B2",
+   "#F9D576",
+   "#FFB954",
+   "#FD9A44",
+   "#F57634",
+   "#E94C1F",
+   "#D11807",
+   "#A01813"
+  ],
+  "kind": "div",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "bad": "#FFFFFF",
+  "cvd_claim": true
+ },
+ "tol.BuRd": {
+  "colors": [
+   "#2166AC",
+   "#4393C3",
+   "#92C5DE",
+   "#D1E5F0",
+   "#F7F7F7",
+   "#FDDBC7",
+   "#F4A582",
+   "#D6604D",
+   "#B2182B"
+  ],
+  "kind": "div",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "bad": "#FFEE99",
+  "cvd_claim": true
+ },
+ "tol.PRGn": {
+  "colors": [
+   "#762A83",
+   "#9970AB",
+   "#C2A5CF",
+   "#E7D4E8",
+   "#F7F7F7",
+   "#D9F0D3",
+   "#ACD39E",
+   "#5AAE61",
+   "#1B7837"
+  ],
+  "kind": "div",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "bad": "#FFEE99",
+  "cvd_claim": true
+ },
+ "tol.YlOrBr": {
+  "colors": [
+   "#FFFFE5",
+   "#FFF7BC",
+   "#FEE391",
+   "#FEC44F",
+   "#FB9A29",
+   "#EC7014",
+   "#CC4C02",
+   "#993404",
+   "#662506"
+  ],
+  "kind": "seq",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "bad": "#888888",
+  "cvd_claim": true
+ },
+ "tol.WhOrBr": {
+  "colors": [
+   "#FFFFFF",
+   "#FFF7BC",
+   "#FEE391",
+   "#FEC44F",
+   "#FB9A29",
+   "#EC7014",
+   "#CC4C02",
+   "#993404",
+   "#662506"
+  ],
+  "kind": "seq",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "bad": "#888888",
+  "cvd_claim": true
+ },
+ "tol.iridescent": {
+  "colors": [
+   "#FEFBE9",
+   "#FCF7D5",
+   "#F5F3C1",
+   "#EAF0B5",
+   "#DDECBF",
+   "#D0E7CA",
+   "#C2E3D2",
+   "#B5DDD8",
+   "#A8D8DC",
+   "#9BD2E1",
+   "#8DCBE4",
+   "#81C4E7",
+   "#7BBCE7",
+   "#7EB2E4",
+   "#88A5DD",
+   "#9398D2",
+   "#9B8AC4",
+   "#9D7DB2",
+   "#9A709E",
+   "#906388",
+   "#805770",
+   "#684957",
+   "#46353A"
+  ],
+  "kind": "seq",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "bad": "#999999",
+  "cvd_claim": true
+ },
+ "tol.incandescent": {
+  "colors": [
+   "#CEFFFF",
+   "#C6F7D6",
+   "#A2F49B",
+   "#BBE453",
+   "#D5CE04",
+   "#E7B503",
+   "#F19903",
+   "#F6790B",
+   "#F94902",
+   "#E40515",
+   "#A80003"
+  ],
+  "kind": "seq",
+  "family": "accessible",
+  "source": "Paul Tol, tol-colors 2.2.0 (personal.sron.nl/~pault)",
+  "bad": "#888888",
+  "cvd_claim": true
+ },
+ "met.archambault": {
+  "colors": [
+   "#88A0DC",
+   "#381A61",
+   "#7C4B73",
+   "#ED968C",
+   "#AB3329",
+   "#E78429",
+   "#F9D14A"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   6,
+   4,
+   0,
+   5,
+   3,
+   2
+  ],
+  "cvd_claim": true
+ },
+ "met.austria": {
+  "colors": [
+   "#A40000",
+   "#16317D",
+   "#007E2F",
+   "#FFCD12",
+   "#B86092",
+   "#721B3E",
+   "#00B7A7"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   1,
+   2,
+   3,
+   5,
+   4,
+   6
+  ],
+  "cvd_claim": false
+ },
+ "met.benedictus": {
+  "colors": [
+   "#9A133D",
+   "#B93961",
+   "#D8527C",
+   "#F28AAA",
+   "#F9B4C9",
+   "#F9E0E8",
+   "#FFFFFF",
+   "#EAF3FF",
+   "#C5DAF6",
+   "#A1C2ED",
+   "#6996E3",
+   "#4060C8",
+   "#1A318B"
+  ],
+  "kind": "div",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   8,
+   4,
+   10,
+   0,
+   6,
+   2,
+   12,
+   3,
+   7,
+   1,
+   11,
+   5,
+   9
+  ],
+  "cvd_claim": false
+ },
+ "met.cassatt1": {
+  "colors": [
+   "#B1615C",
+   "#D88782",
+   "#E3ABA7",
+   "#EDD7D9",
+   "#C9C9DD",
+   "#9D9DC7",
+   "#8282AA",
+   "#5A5A83"
+  ],
+  "kind": "div",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   2,
+   5,
+   0,
+   7,
+   3,
+   4,
+   1,
+   6
+  ],
+  "cvd_claim": true
+ },
+ "met.cassatt2": {
+  "colors": [
+   "#2D223C",
+   "#574571",
+   "#90719F",
+   "#B695BC",
+   "#DEC5DA",
+   "#C1D1AA",
+   "#7FA074",
+   "#466C4B",
+   "#2C4B27",
+   "#0E2810"
+  ],
+  "kind": "div",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   6,
+   2,
+   8,
+   0,
+   4,
+   5,
+   1,
+   9,
+   3,
+   7
+  ],
+  "cvd_claim": true
+ },
+ "met.cross": {
+  "colors": [
+   "#C969A1",
+   "#CE4441",
+   "#EE8577",
+   "#EB7926",
+   "#FFBB44",
+   "#859B6C",
+   "#62929A",
+   "#004F63",
+   "#122451"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   3,
+   6,
+   0,
+   7,
+   1,
+   5,
+   2,
+   4,
+   8
+  ],
+  "cvd_claim": false
+ },
+ "met.degas": {
+  "colors": [
+   "#591D06",
+   "#96410E",
+   "#E5A335",
+   "#556219",
+   "#418979",
+   "#2B614E",
+   "#053C29"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   4,
+   1,
+   0,
+   2,
+   3,
+   6,
+   5
+  ],
+  "cvd_claim": false
+ },
+ "met.demuth": {
+  "colors": [
+   "#591C19",
+   "#9B332B",
+   "#B64F32",
+   "#D39A2D",
+   "#F7C267",
+   "#B9B9B8",
+   "#8B8B99",
+   "#5D6174",
+   "#41485F",
+   "#262D42"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   8,
+   4,
+   0,
+   6,
+   2,
+   3,
+   7,
+   1,
+   5,
+   9
+  ],
+  "cvd_claim": true
+ },
+ "met.derain": {
+  "colors": [
+   "#EFC86E",
+   "#97C684",
+   "#6F9969",
+   "#AAB5D5",
+   "#808FE1",
+   "#5C66A8",
+   "#454A74"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   3,
+   1,
+   4,
+   6,
+   0,
+   2,
+   5
+  ],
+  "cvd_claim": true
+ },
+ "met.egypt": {
+  "colors": [
+   "#DD5129",
+   "#0F7BA2",
+   "#43B284",
+   "#FAB255"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "cvd_claim": true
+ },
+ "met.gauguin": {
+  "colors": [
+   "#B04948",
+   "#811E18",
+   "#9E4013",
+   "#C88A2C",
+   "#4C6216",
+   "#1A472A"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   4,
+   3,
+   2,
+   0,
+   5
+  ],
+  "cvd_claim": false
+ },
+ "met.greek": {
+  "colors": [
+   "#3C0D03",
+   "#8D1C06",
+   "#E67424",
+   "#ED9B49",
+   "#F5C34D"
+  ],
+  "kind": "seq",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   2,
+   4,
+   0,
+   3
+  ],
+  "cvd_claim": true
+ },
+ "met.hiroshige": {
+  "colors": [
+   "#E76254",
+   "#EF8A47",
+   "#F7AA58",
+   "#FFD06F",
+   "#FFE6B7",
+   "#AADCE0",
+   "#72BCD5",
+   "#528FAD",
+   "#376795",
+   "#1E466E"
+  ],
+  "kind": "div",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   5,
+   1,
+   8,
+   2,
+   6,
+   4,
+   0,
+   9,
+   3,
+   7
+  ],
+  "cvd_claim": true
+ },
+ "met.hokusai1": {
+  "colors": [
+   "#6D2F20",
+   "#B75347",
+   "#DF7E66",
+   "#E09351",
+   "#EDC775",
+   "#94B594",
+   "#224B5E"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   6,
+   3,
+   5,
+   4,
+   0,
+   2
+  ],
+  "cvd_claim": false
+ },
+ "met.hokusai2": {
+  "colors": [
+   "#ABC9C8",
+   "#72AEB6",
+   "#4692B0",
+   "#2F70A1",
+   "#134B73",
+   "#0A3351"
+  ],
+  "kind": "seq",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   4,
+   1,
+   3,
+   0,
+   5,
+   2
+  ],
+  "cvd_claim": true
+ },
+ "met.hokusai3": {
+  "colors": [
+   "#D8D97A",
+   "#95C36E",
+   "#74C8C3",
+   "#5A97C1",
+   "#295384",
+   "#0A2E57"
+  ],
+  "kind": "seq",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   3,
+   1,
+   4,
+   2,
+   0,
+   5
+  ],
+  "cvd_claim": true
+ },
+ "met.homer1": {
+  "colors": [
+   "#551F00",
+   "#A62F00",
+   "#DF7700",
+   "#F5B642",
+   "#FFF179",
+   "#C3F4F6",
+   "#6AD5E8",
+   "#32B2DA"
+  ],
+  "kind": "div",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   5,
+   2,
+   1,
+   6,
+   3,
+   7,
+   4,
+   0
+  ],
+  "cvd_claim": false
+ },
+ "met.homer2": {
+  "colors": [
+   "#BF3626",
+   "#E9851D",
+   "#F9C53B",
+   "#AEAC4C",
+   "#788F33",
+   "#165D43"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   2,
+   0,
+   3,
+   5,
+   1,
+   4
+  ],
+  "cvd_claim": false
+ },
+ "met.isfahan1": {
+  "colors": [
+   "#4E3910",
+   "#845D29",
+   "#AE8548",
+   "#E3C28B",
+   "#4FB6CA",
+   "#178F92",
+   "#175F5D",
+   "#054544"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   4,
+   1,
+   7,
+   3,
+   5,
+   0,
+   6,
+   2
+  ],
+  "cvd_claim": true
+ },
+ "met.isfahan2": {
+  "colors": [
+   "#D7ACA1",
+   "#DDC000",
+   "#79AD41",
+   "#34B6C6",
+   "#4063A3"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   3,
+   1,
+   2,
+   4,
+   0
+  ],
+  "cvd_claim": true
+ },
+ "met.java": {
+  "colors": [
+   "#663171",
+   "#CF3A36",
+   "#EA7428",
+   "#E2998A",
+   "#0C7156"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   3,
+   1,
+   4,
+   2
+  ],
+  "cvd_claim": true
+ },
+ "met.johnson": {
+  "colors": [
+   "#A00E00",
+   "#D04E00",
+   "#F6C200",
+   "#0086A8",
+   "#132B69"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   2,
+   0,
+   3,
+   1,
+   4
+  ],
+  "cvd_claim": true
+ },
+ "met.juarez": {
+  "colors": [
+   "#A82203",
+   "#208CC0",
+   "#F1AF3A",
+   "#CF5E4E",
+   "#637B31",
+   "#003967"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "cvd_claim": false
+ },
+ "met.kandinsky": {
+  "colors": [
+   "#3B7C70",
+   "#CE9642",
+   "#898E9F",
+   "#3B3A3E"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "cvd_claim": true
+ },
+ "met.klimt": {
+  "colors": [
+   "#DF9ED4",
+   "#C93F55",
+   "#EACC62",
+   "#469D76",
+   "#3C4B99",
+   "#924099"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   4,
+   1,
+   2,
+   3,
+   5,
+   0
+  ],
+  "cvd_claim": false
+ },
+ "met.lakota": {
+  "colors": [
+   "#04A3BD",
+   "#F0BE3D",
+   "#931E18",
+   "#DA7901",
+   "#247D3F",
+   "#20235B"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "cvd_claim": false
+ },
+ "met.manet": {
+  "colors": [
+   "#3B2319",
+   "#80521C",
+   "#D29C44",
+   "#EBC174",
+   "#EDE2CC",
+   "#7EC5F4",
+   "#4585B7",
+   "#225E92",
+   "#183571",
+   "#43429B",
+   "#5E65BE"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   7,
+   2,
+   9,
+   3,
+   6,
+   8,
+   10,
+   1,
+   5,
+   0,
+   4
+  ],
+  "cvd_claim": false
+ },
+ "met.monet": {
+  "colors": [
+   "#4E6D58",
+   "#749E89",
+   "#ABCCBE",
+   "#E3CACF",
+   "#C399A2",
+   "#9F6E71",
+   "#41507B",
+   "#7D87B2",
+   "#C2CAE3"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   4,
+   7,
+   2,
+   3,
+   8,
+   0,
+   5,
+   6
+  ],
+  "cvd_claim": false
+ },
+ "met.moreau": {
+  "colors": [
+   "#421600",
+   "#792504",
+   "#BC7524",
+   "#8DADCA",
+   "#527BAA",
+   "#104839",
+   "#082844"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   4,
+   2,
+   3,
+   6,
+   0,
+   5
+  ],
+  "cvd_claim": false
+ },
+ "met.morgenstern": {
+  "colors": [
+   "#98768E",
+   "#B08BA5",
+   "#C7A2B6",
+   "#DFBBC8",
+   "#FFC680",
+   "#FFB178",
+   "#DB8872",
+   "#A56457"
+  ],
+  "kind": "div",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   6,
+   4,
+   7,
+   3,
+   5,
+   2,
+   1,
+   0
+  ],
+  "cvd_claim": true
+ },
+ "met.nattier": {
+  "colors": [
+   "#52271C",
+   "#944839",
+   "#C08E39",
+   "#7F793C",
+   "#565C33",
+   "#184948",
+   "#022A2A"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   5,
+   2,
+   3,
+   6,
+   1,
+   4
+  ],
+  "cvd_claim": false
+ },
+ "met.navajo": {
+  "colors": [
+   "#660D20",
+   "#E59A52",
+   "#EDCE79",
+   "#094568",
+   "#E1C59A"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "cvd_claim": false
+ },
+ "met.newkingdom": {
+  "colors": [
+   "#E1846C",
+   "#9EB4E0",
+   "#E6BB9E",
+   "#9C6849",
+   "#735852"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   0,
+   2,
+   3,
+   4
+  ],
+  "cvd_claim": false
+ },
+ "met.nizami": {
+  "colors": [
+   "#DD7867",
+   "#B83326",
+   "#C8570D",
+   "#EDB144",
+   "#8CC8BC",
+   "#7DA7EA",
+   "#5773C0",
+   "#1D4497"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   4,
+   1,
+   5,
+   7,
+   2,
+   6,
+   3,
+   0
+  ],
+  "cvd_claim": false
+ },
+ "met.okeeffe1": {
+  "colors": [
+   "#6B200C",
+   "#973D21",
+   "#DA6C42",
+   "#EE956A",
+   "#FBC2A9",
+   "#F6F2EE",
+   "#BAD6F9",
+   "#7DB0EA",
+   "#447FDD",
+   "#225BB2",
+   "#133E7E"
+  ],
+  "kind": "div",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   7,
+   5,
+   0,
+   3,
+   9,
+   2,
+   10,
+   4,
+   1,
+   6,
+   8
+  ],
+  "cvd_claim": true
+ },
+ "met.okeeffe2": {
+  "colors": [
+   "#FBE3C2",
+   "#F2C88F",
+   "#ECB27D",
+   "#E69C6B",
+   "#D37750",
+   "#B9563F",
+   "#92351E"
+  ],
+  "kind": "seq",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   6,
+   0,
+   5,
+   3,
+   1,
+   4,
+   2
+  ],
+  "cvd_claim": true
+ },
+ "met.paquin": {
+  "colors": [
+   "#831818",
+   "#C62320",
+   "#F05B43",
+   "#F78462",
+   "#FEAC81",
+   "#F7DEA3",
+   "#CED1AF",
+   "#98AB76",
+   "#748F46",
+   "#47632A",
+   "#275024"
+  ],
+  "kind": "div",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   9,
+   5,
+   0,
+   7,
+   3,
+   2,
+   4,
+   8,
+   1,
+   6,
+   10
+  ],
+  "cvd_claim": false
+ },
+ "met.peru1": {
+  "colors": [
+   "#B5361C",
+   "#E35E28",
+   "#1C9D7C",
+   "#31C7BA",
+   "#369CC9",
+   "#3A507F"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   2,
+   0,
+   4,
+   1,
+   3,
+   5
+  ],
+  "cvd_claim": false
+ },
+ "met.peru2": {
+  "colors": [
+   "#65150B",
+   "#961F1F",
+   "#C0431F",
+   "#F19425",
+   "#C59349",
+   "#533D14"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   3,
+   0,
+   2,
+   4,
+   1,
+   5
+  ],
+  "cvd_claim": false
+ },
+ "met.pillement": {
+  "colors": [
+   "#A9845B",
+   "#697852",
+   "#738E8E",
+   "#44636F",
+   "#2B4655",
+   "#0F252F"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   3,
+   2,
+   1,
+   4,
+   0,
+   5
+  ],
+  "cvd_claim": true
+ },
+ "met.pissaro": {
+  "colors": [
+   "#134130",
+   "#4C825D",
+   "#8CAE9E",
+   "#8DC7DC",
+   "#508CA7",
+   "#1A5270",
+   "#0E2A4D"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   5,
+   1,
+   3,
+   0,
+   6,
+   4,
+   2
+  ],
+  "cvd_claim": false
+ },
+ "met.redon": {
+  "colors": [
+   "#5B859E",
+   "#1E395F",
+   "#75884B",
+   "#1E5A46",
+   "#DF8D71",
+   "#AF4F2F",
+   "#D48F90",
+   "#732F30",
+   "#AB84A5",
+   "#59385C",
+   "#D8B847",
+   "#B38711"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "cvd_claim": false
+ },
+ "met.renoir": {
+  "colors": [
+   "#17154F",
+   "#2F357C",
+   "#6C5D9E",
+   "#9D9CD5",
+   "#B0799A",
+   "#F6B3B0",
+   "#E48171",
+   "#BF3729",
+   "#E69B00",
+   "#F5BB50",
+   "#ADA43B",
+   "#355828"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   4,
+   8,
+   11,
+   2,
+   7,
+   6,
+   9,
+   3,
+   0,
+   5,
+   10
+  ],
+  "cvd_claim": false
+ },
+ "met.signac": {
+  "colors": [
+   "#FBE183",
+   "#F4C40F",
+   "#FE9B00",
+   "#D8443C",
+   "#9B3441",
+   "#DE597C",
+   "#E87B89",
+   "#E6A2A6",
+   "#AA7AA1",
+   "#9F5691",
+   "#633372",
+   "#1F6E9C",
+   "#2B9B81",
+   "#92C051"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   12,
+   2,
+   1,
+   0,
+   10,
+   4,
+   7,
+   13,
+   11,
+   9,
+   6,
+   3,
+   5,
+   8
+  ],
+  "cvd_claim": false
+ },
+ "met.tam": {
+  "colors": [
+   "#FFD353",
+   "#FFB242",
+   "#EF8737",
+   "#DE4F33",
+   "#BB292C",
+   "#9F2D55",
+   "#62205F",
+   "#341648"
+  ],
+  "kind": "seq",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   2,
+   7,
+   0,
+   5,
+   1,
+   6,
+   3,
+   4
+  ],
+  "cvd_claim": true
+ },
+ "met.tara": {
+  "colors": [
+   "#EAB1C6",
+   "#D35E17",
+   "#E18A1F",
+   "#E9B109",
+   "#829D44"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   2,
+   1,
+   4,
+   3
+  ],
+  "cvd_claim": false
+ },
+ "met.thomas": {
+  "colors": [
+   "#B24422",
+   "#C44D76",
+   "#4457A5",
+   "#13315F",
+   "#B1A1CC",
+   "#59386C",
+   "#447861",
+   "#7CAF5C"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   2,
+   1,
+   7,
+   5,
+   0,
+   3,
+   6,
+   4
+  ],
+  "cvd_claim": false
+ },
+ "met.tiepolo": {
+  "colors": [
+   "#802417",
+   "#C06636",
+   "#CE9344",
+   "#E8B960",
+   "#646E3B",
+   "#2B5851",
+   "#508EA2",
+   "#17486F"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   1,
+   7,
+   3,
+   2,
+   4,
+   6,
+   5
+  ],
+  "cvd_claim": false
+ },
+ "met.troy": {
+  "colors": [
+   "#421401",
+   "#6C1D0E",
+   "#8B3A2B",
+   "#C27668",
+   "#7BA0B4",
+   "#44728C",
+   "#235070",
+   "#0A2D46"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   6,
+   3,
+   4,
+   0,
+   7,
+   2,
+   5
+  ],
+  "cvd_claim": true
+ },
+ "met.tsimshian": {
+  "colors": [
+   "#582310",
+   "#AA361D",
+   "#82C45F",
+   "#318F49",
+   "#0CB4BB",
+   "#2673A3",
+   "#473D7D"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   5,
+   0,
+   6,
+   3,
+   0,
+   4,
+   2
+  ],
+  "cvd_claim": false
+ },
+ "met.vangogh1": {
+  "colors": [
+   "#2C2D54",
+   "#434475",
+   "#6B6CA3",
+   "#969BC7",
+   "#87BCBD",
+   "#89AB7C",
+   "#6F9954"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   2,
+   4,
+   6,
+   3,
+   5,
+   1,
+   0
+  ],
+  "cvd_claim": false
+ },
+ "met.vangogh2": {
+  "colors": [
+   "#BD3106",
+   "#D9700E",
+   "#E9A00E",
+   "#EEBE04",
+   "#5B7314",
+   "#C3D6CE",
+   "#89A6BB",
+   "#454B87"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   0,
+   4,
+   7,
+   1,
+   6,
+   3,
+   5,
+   2
+  ],
+  "cvd_claim": false
+ },
+ "met.vangogh3": {
+  "colors": [
+   "#E7E5CC",
+   "#C2D6A4",
+   "#9CC184",
+   "#669D62",
+   "#3C7C3D",
+   "#1F5B25",
+   "#1E3D14",
+   "#192813"
+  ],
+  "kind": "seq",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   6,
+   4,
+   0,
+   3,
+   7,
+   1,
+   2,
+   5
+  ],
+  "cvd_claim": true
+ },
+ "met.veronese": {
+  "colors": [
+   "#67322E",
+   "#99610A",
+   "#C38F16",
+   "#6E948C",
+   "#2C6B67",
+   "#175449",
+   "#122C43"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   4,
+   0,
+   6,
+   1,
+   2,
+   5,
+   3
+  ],
+  "cvd_claim": true
+ },
+ "met.wissing": {
+  "colors": [
+   "#4B1D0D",
+   "#7C291E",
+   "#BA7233",
+   "#3A4421",
+   "#2D5380"
+  ],
+  "kind": "cat",
+  "family": "art",
+  "source": "MetBrewer (Blake R. Mills), Met Museum artworks",
+  "cat_order": [
+   1,
+   2,
+   4,
+   3,
+   0
+  ],
+  "cvd_claim": false
+ },
+ "wes.bottlerocket1": {
+  "colors": [
+   "#A42820",
+   "#5F5647",
+   "#9B110E",
+   "#3F5151",
+   "#4E2A1E",
+   "#550307",
+   "#0C1707"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.bottlerocket2": {
+  "colors": [
+   "#FAD510",
+   "#CB2314",
+   "#273046",
+   "#354823",
+   "#1E1E1E"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.rushmore1": {
+  "colors": [
+   "#E1BD6D",
+   "#EABE94",
+   "#0B775E",
+   "#35274A",
+   "#F2300F"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.royal1": {
+  "colors": [
+   "#899DA4",
+   "#C93312",
+   "#FAEFD1",
+   "#DC863B"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.royal2": {
+  "colors": [
+   "#9A8822",
+   "#F5CDB4",
+   "#F8AFA8",
+   "#FDDDA0",
+   "#74A089"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.zissou1": {
+  "colors": [
+   "#3B9AB2",
+   "#78B7C5",
+   "#EBCC2A",
+   "#E1AF00",
+   "#F21A00"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.darjeeling1": {
+  "colors": [
+   "#FF0000",
+   "#00A08A",
+   "#F2AD00",
+   "#F98400",
+   "#5BBCD6"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.darjeeling2": {
+  "colors": [
+   "#ECCBAE",
+   "#046C9A",
+   "#D69C4E",
+   "#ABDDDE",
+   "#000000"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.chevalier1": {
+  "colors": [
+   "#446455",
+   "#FDD262",
+   "#D3DDDC",
+   "#C7B19C"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.fantasticfox1": {
+  "colors": [
+   "#DD8D29",
+   "#E2D200",
+   "#46ACC8",
+   "#E58601",
+   "#B40F20"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.moonrise1": {
+  "colors": [
+   "#F3DF6C",
+   "#CEAB07",
+   "#D5D5D3",
+   "#24281A"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.moonrise2": {
+  "colors": [
+   "#798E87",
+   "#C27D38",
+   "#CCC591",
+   "#29211F"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.moonrise3": {
+  "colors": [
+   "#85D4E3",
+   "#F4B5BD",
+   "#9C964A",
+   "#CDC08C",
+   "#FAD77B"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.cavalcanti1": {
+  "colors": [
+   "#D8B70A",
+   "#02401B",
+   "#A2A475",
+   "#81A88D",
+   "#972D15"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.grandbudapest1": {
+  "colors": [
+   "#F1BB7B",
+   "#FD6467",
+   "#5B1A18",
+   "#D67236"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.grandbudapest2": {
+  "colors": [
+   "#E6A0C4",
+   "#C6CDF7",
+   "#D8A499",
+   "#7294D4"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.isleofdogs1": {
+  "colors": [
+   "#9986A5",
+   "#79402E",
+   "#CCBA72",
+   "#0F0D0E",
+   "#D9D0D3",
+   "#8D8680"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.isleofdogs2": {
+  "colors": [
+   "#EAD3BF",
+   "#AA9486",
+   "#B6854D",
+   "#39312F",
+   "#1C1718"
+  ],
+  "kind": "seq",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.frenchdispatch": {
+  "colors": [
+   "#90D4CC",
+   "#BD3027",
+   "#B0AFA2",
+   "#7FC0C6",
+   "#9D9C85"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.asteroidcity1": {
+  "colors": [
+   "#0A9F9D",
+   "#CEB175",
+   "#E54E21",
+   "#6C8645",
+   "#C18748"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.asteroidcity2": {
+  "colors": [
+   "#C52E19",
+   "#AC9765",
+   "#54D8B1",
+   "#B67C3B",
+   "#175149",
+   "#AF4E24"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "wes.asteroidcity3": {
+  "colors": [
+   "#FBA72A",
+   "#D3D4D8",
+   "#CB7A5C",
+   "#5785C1"
+  ],
+  "kind": "cat",
+  "family": "cinema",
+  "source": "wesanderson R package (Karthik Ram)"
+ },
+ "journal.npg": {
+  "colors": [
+   "#E64B35",
+   "#4DBBD5",
+   "#00A087",
+   "#3C5488",
+   "#F39B7F",
+   "#8491B4",
+   "#91D1C2",
+   "#DC0000",
+   "#7E6148",
+   "#B09C85"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'npg/nrc' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "journal.aaas": {
+  "colors": [
+   "#3B4992",
+   "#EE0000",
+   "#008B45",
+   "#631879",
+   "#008280",
+   "#BB0021",
+   "#5F559B",
+   "#A20056",
+   "#808180",
+   "#1B1919"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'aaas/default' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "journal.nejm": {
+  "colors": [
+   "#BC3C29",
+   "#0072B5",
+   "#E18727",
+   "#20854E",
+   "#7876B1",
+   "#6F99AD",
+   "#FFDC91",
+   "#EE4C97"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'nejm/default' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "journal.lancet": {
+  "colors": [
+   "#00468B",
+   "#ED0000",
+   "#42B540",
+   "#0099B4",
+   "#925E9F",
+   "#FDAF91",
+   "#AD002A",
+   "#ADB6B6",
+   "#1B1919"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'lancet/lanonc' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "journal.jama": {
+  "colors": [
+   "#374E55",
+   "#DF8F44",
+   "#00A1D5",
+   "#B24745",
+   "#79AF97",
+   "#6A6599",
+   "#80796B"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'jama/default' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "journal.jco": {
+  "colors": [
+   "#0073C2",
+   "#EFC000",
+   "#868686",
+   "#CD534C",
+   "#7AA6DC",
+   "#003C67",
+   "#8F7700",
+   "#3B3B3B",
+   "#A73030",
+   "#4A6990"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'jco/default' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "d3.category10": {
+  "colors": [
+   "#1F77B4",
+   "#FF7F0E",
+   "#2CA02C",
+   "#D62728",
+   "#9467BD",
+   "#8C564B",
+   "#E377C2",
+   "#7F7F7F",
+   "#BCBD22",
+   "#17BECF"
+  ],
+  "kind": "cat",
+  "family": "pop",
+  "source": "ggsci (Nan Xiao) 'd3/category10' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "journal.uchicago": {
+  "colors": [
+   "#800000",
+   "#767676",
+   "#FFA319",
+   "#8A9045",
+   "#155F83",
+   "#C16622",
+   "#8F3931",
+   "#58593F",
+   "#350E20"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'uchicago/default' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "journal.cosmic_dark": {
+  "colors": [
+   "#171717",
+   "#7D0226",
+   "#300049",
+   "#165459",
+   "#3F2327",
+   "#0B1948",
+   "#E71012",
+   "#555555",
+   "#193006",
+   "#A8450C"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'cosmic/hallmarks_dark' \u2014 inspired by the publisher's figures",
+  "bg": "dark"
+ },
+ "journal.cosmic_light": {
+  "colors": [
+   "#2E2A2B",
+   "#CF4E9C",
+   "#8C57A2",
+   "#358DB9",
+   "#82581F",
+   "#2F509E",
+   "#E5614C",
+   "#97A1A7",
+   "#3DA873",
+   "#DC9445"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'cosmic/hallmarks_light' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "scifi.futurama": {
+  "colors": [
+   "#FF6F00",
+   "#C71000",
+   "#008EA0",
+   "#8A4198",
+   "#5A9599",
+   "#FF6348",
+   "#84D7E1",
+   "#FF95A8",
+   "#3D3B25",
+   "#ADE2D0",
+   "#1A5354",
+   "#3F4041"
+  ],
+  "kind": "cat",
+  "family": "pop",
+  "source": "ggsci (Nan Xiao) 'futurama/planetexpress' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "scifi.startrek": {
+  "colors": [
+   "#CC0C00",
+   "#5C88DA",
+   "#84BD00",
+   "#FFCD00",
+   "#7C878E",
+   "#00B5E2",
+   "#00AF66"
+  ],
+  "kind": "cat",
+  "family": "pop",
+  "source": "ggsci (Nan Xiao) 'startrek/uniform' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "scifi.tron": {
+  "colors": [
+   "#FF410D",
+   "#6EE2FF",
+   "#F7C530",
+   "#95CC5E",
+   "#D0DFE6",
+   "#F79D1E",
+   "#748AA6"
+  ],
+  "kind": "cat",
+  "family": "pop",
+  "source": "ggsci (Nan Xiao) 'tron/legacy' \u2014 inspired by the publisher's figures",
+  "bg": "dark"
+ },
+ "journal.frontiers": {
+  "colors": [
+   "#D51317",
+   "#F39200",
+   "#EFD500",
+   "#95C11F",
+   "#007B3D",
+   "#31B7BC",
+   "#0094CD",
+   "#164194",
+   "#6F286A",
+   "#706F6F"
+  ],
+  "kind": "cat",
+  "family": "journal",
+  "source": "ggsci (Nan Xiao) 'frontiers/default' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "ui.flatui": {
+  "colors": [
+   "#C0392B",
+   "#D35400",
+   "#F39C12",
+   "#27AE60",
+   "#16A085",
+   "#2980B9",
+   "#8E44AD",
+   "#2C3E50",
+   "#7F8C8D",
+   "#BDC3C7"
+  ],
+  "kind": "cat",
+  "family": "pop",
+  "source": "ggsci (Nan Xiao) 'flatui/default' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "ui.flatui_aussie": {
+  "colors": [
+   "#F9CA24",
+   "#F0932B",
+   "#EB4D4B",
+   "#6AB04C",
+   "#C7ECEE",
+   "#22A6B3",
+   "#BE2EDD",
+   "#4834D4",
+   "#130F40",
+   "#535C68"
+  ],
+  "kind": "cat",
+  "family": "pop",
+  "source": "ggsci (Nan Xiao) 'flatui/aussie' \u2014 inspired by the publisher's figures",
+  "bg": "light"
+ },
+ "theme.catppuccin_latte": {
+  "colors": [
+   "#D20F39",
+   "#FE640B",
+   "#DF8E1D",
+   "#40A02B",
+   "#179299",
+   "#04A5E5",
+   "#1E66F5",
+   "#8839EF",
+   "#EA76CB",
+   "#7287FD"
+  ],
+  "kind": "cat",
+  "family": "theme",
+  "source": "Catppuccin palette.json",
+  "bg": "light",
+  "background": "#eff1f5",
+  "text": "#4c4f69"
+ },
+ "theme.catppuccin_frappe": {
+  "colors": [
+   "#E78284",
+   "#EF9F76",
+   "#E5C890",
+   "#A6D189",
+   "#81C8BE",
+   "#99D1DB",
+   "#8CAAEE",
+   "#CA9EE6",
+   "#F4B8E4",
+   "#BABBF1"
+  ],
+  "kind": "cat",
+  "family": "theme",
+  "source": "Catppuccin palette.json",
+  "bg": "dark",
+  "background": "#303446",
+  "text": "#c6d0f5"
+ },
+ "theme.catppuccin_mocha": {
+  "colors": [
+   "#F38BA8",
+   "#FAB387",
+   "#F9E2AF",
+   "#A6E3A1",
+   "#94E2D5",
+   "#89DCEB",
+   "#89B4FA",
+   "#CBA6F7",
+   "#F5C2E7",
+   "#B4BEFE"
+  ],
+  "kind": "cat",
+  "family": "theme",
+  "source": "Catppuccin palette.json",
+  "bg": "dark",
+  "background": "#1e1e2e",
+  "text": "#cdd6f4"
+ },
+ "theme.rosepine_main": {
+  "colors": [
+   "#EB6F92",
+   "#F6C177",
+   "#EBBCBA",
+   "#31748F",
+   "#9CCFD8",
+   "#C4A7E7"
+  ],
+  "kind": "cat",
+  "family": "theme",
+  "source": "Ros\u00e9 Pine palette.json",
+  "bg": "dark",
+  "background": "#191724",
+  "text": "#e0def4"
+ },
+ "theme.rosepine_moon": {
+  "colors": [
+   "#EB6F92",
+   "#F6C177",
+   "#EA9A97",
+   "#3E8FB0",
+   "#9CCFD8",
+   "#C4A7E7"
+  ],
+  "kind": "cat",
+  "family": "theme",
+  "source": "Ros\u00e9 Pine palette.json",
+  "bg": "dark",
+  "background": "#232136",
+  "text": "#e0def4"
+ },
+ "theme.rosepine_dawn": {
+  "colors": [
+   "#B4637A",
+   "#EA9D34",
+   "#D7827E",
+   "#286983",
+   "#56949F",
+   "#907AA9"
+  ],
+  "kind": "cat",
+  "family": "theme",
+  "source": "Ros\u00e9 Pine palette.json",
+  "bg": "light",
+  "background": "#faf4ed",
+  "text": "#464261"
+ },
+ "theme.nord_aurora": {
+  "colors": [
+   "#BF616A",
+   "#D08770",
+   "#EBCB8B",
+   "#A3BE8C",
+   "#B48EAD"
+  ],
+  "kind": "cat",
+  "family": "theme",
+  "source": "Nord (nordtheme)",
+  "bg": "any",
+  "background": "#2e3440"
+ },
+ "theme.nord_frost": {
+  "colors": [
+   "#8FBCBB",
+   "#88C0D0",
+   "#81A1C1",
+   "#5E81AC"
+  ],
+  "kind": "cat",
+  "family": "theme",
+  "source": "Nord (nordtheme)",
+  "bg": "any"
+ },
+ "theme.nord_full": {
+  "colors": [
+   "#5E81AC",
+   "#BF616A",
+   "#D08770",
+   "#EBCB8B",
+   "#A3BE8C",
+   "#B48EAD",
+   "#8FBCBB"
+  ],
+  "kind": "cat",
+  "family": "theme",
+  "source": "Nord (nordtheme)",
+  "bg": "dark",
+  "background": "#2e3440",
+  "text": "#eceff4"
+ },
+ "_riso_inks": {
+  "Black": "#000000",
+  "Burgundy": "#914e72",
+  "Blue": "#0078bf",
+  "Green": "#00a95c",
+  "Medium Blue": "#3255a4",
+  "Bright Red": "#f15060",
+  "RisoFederal Blue": "#3d5588",
+  "Purple": "#765ba7",
+  "Teal": "#00838a",
+  "Flat Gold": "#bb8b41",
+  "Hunter Green": "#407060",
+  "Red": "#ff665e",
+  "Brown": "#925f52",
+  "Yellow": "#ffe800",
+  "Marine Red": "#d2515e",
+  "Orange": "#ff6c2f",
+  "Fluorescent Pink": "#ff48b0",
+  "Light Gray": "#88898a",
+  "Metallic Gold": "#ac936e",
+  "Crimson": "#e45d50",
+  "Fluorescent Orange": "#ff7477",
+  "Cornflower": "#62a8e5",
+  "Sky Blue": "#4982cf",
+  "Sea Blue": "#0074a2",
+  "Lake": "#235ba8",
+  "Indigo": "#484d7a",
+  "Midnight": "#435060",
+  "Mist": "#d5e4c0",
+  "Granite": "#a5aaa8",
+  "Charcoal": "#70747c",
+  "Smoky Teal": "#5f8289",
+  "Steel": "#375e77",
+  "Slate": "#5e695e",
+  "Turquoise": "#00aa93",
+  "Emerald": "#19975d",
+  "Grass": "#397e58",
+  "Forest": "#516e5a",
+  "Spruce": "#4a635d",
+  "Moss": "#68724d",
+  "Sea Foam": "#62c2b1",
+  "Kelly Green": "#67b346",
+  "Light Teal": "#009da5",
+  "Ivy": "#169b62",
+  "Pine": "#237e74",
+  "Lagoon": "#2f6165",
+  "Violet": "#9d7ad2",
+  "Orchid": "#aa60bf",
+  "Plum": "#845991",
+  "Raisin": "#775d7a",
+  "Grape": "#6c5d80",
+  "Scarlet": "#f65058",
+  "Tomato": "#d2515e",
+  "Cranberry": "#d1517a",
+  "Maroon": "#9e4c6e",
+  "Raspberry Red": "#d1517a",
+  "Brick": "#a75154",
+  "Light Lime": "#e3ed55",
+  "Sunflower": "#ffb511",
+  "Melon": "#ffae3b",
+  "Apricot": "#f6a04d",
+  "Paprika": "#ee7f4b",
+  "Pumpkin": "#ff6f4c",
+  "Bright Olive Green": "#b49f29",
+  "Bright Gold": "#ba8032",
+  "Copper": "#bd6439",
+  "Mahogany": "#8e595a",
+  "Bisque": "#f2cdcf",
+  "Bubble Gum": "#f984ca",
+  "Light Mauve": "#e6b5c9",
+  "Dark Mauve": "#bd8ca6",
+  "Wine": "#914e72",
+  "Gray": "#928d88",
+  "White": "#ffffff",
+  "Aqua": "#5ec8e5",
+  "Mint": "#82d8d5",
+  "Fluorescent Yellow": "#ffe900",
+  "Fluorescent Red": "#ff4c65",
+  "Fluorescent Green": "#44d62c"
+ },
+ "mpl.okabe_ito": {
+  "colors": [
+   "#000000",
+   "#E69F00",
+   "#56B4E9",
+   "#009E73",
+   "#F0E442",
+   "#0072B2",
+   "#D55E00",
+   "#CC79A7"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "matplotlib color_sequences",
+  "cvd_claim": true
+ },
+ "mpl.petroff6": {
+  "colors": [
+   "#5790FC",
+   "#F89C20",
+   "#E42536",
+   "#964A8B",
+   "#9C9CA1",
+   "#7A21DD"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "matplotlib color_sequences",
+  "cvd_claim": true
+ },
+ "mpl.petroff8": {
+  "colors": [
+   "#1845FB",
+   "#FF5E02",
+   "#C91F16",
+   "#C849A9",
+   "#ADAD7D",
+   "#86C8DD",
+   "#578DFF",
+   "#656364"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "matplotlib color_sequences",
+  "cvd_claim": true
+ },
+ "mpl.petroff10": {
+  "colors": [
+   "#3F90DA",
+   "#FFA90E",
+   "#BD1F01",
+   "#94A4A2",
+   "#832DB6",
+   "#A96B59",
+   "#E76300",
+   "#B9AC70",
+   "#717581",
+   "#92DADD"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "matplotlib color_sequences",
+  "cvd_claim": true
+ },
+ "mpl.tab10": {
+  "colors": [
+   "#1F77B4",
+   "#FF7F0E",
+   "#2CA02C",
+   "#D62728",
+   "#9467BD",
+   "#8C564B",
+   "#E377C2",
+   "#7F7F7F",
+   "#BCBD22",
+   "#17BECF"
+  ],
+  "kind": "cat",
+  "family": "accessible",
+  "source": "matplotlib color_sequences",
+  "cvd_claim": false
+ }
+}

@@ -1,0 +1,1886 @@
+{
+ "tol.bright": {
+  "normal": 20.54,
+  "deutan": 14.82,
+  "protan": 14.17,
+  "tritan": 8.62,
+  "gray": 0.53,
+  "min_bg_contrast": 1.84,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "tol.vibrant": {
+  "normal": 18.34,
+  "deutan": 14.36,
+  "protan": 13.72,
+  "tritan": 8.58,
+  "gray": 1.96,
+  "min_bg_contrast": 1.92,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "tol.muted": {
+  "normal": 15.0,
+  "deutan": 14.25,
+  "protan": 11.8,
+  "tritan": 11.5,
+  "gray": 1.91,
+  "min_bg_contrast": 1.36,
+  "cvd_safe": true,
+  "safe_n": 10
+ },
+ "tol.high_contrast": {
+  "normal": 29.36,
+  "deutan": 25.33,
+  "protan": 26.02,
+  "tritan": 21.22,
+  "gray": 17.76,
+  "min_bg_contrast": 2.13,
+  "cvd_safe": true,
+  "safe_n": 4
+ },
+ "tol.medium_contrast": {
+  "normal": 25.1,
+  "deutan": 20.33,
+  "protan": 16.83,
+  "tritan": 11.96,
+  "gray": 7.75,
+  "min_bg_contrast": 1.56,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "tol.pale": {
+  "normal": 6.71,
+  "deutan": 4.92,
+  "protan": 4.2,
+  "tritan": 6.37,
+  "gray": 0.43,
+  "min_bg_contrast": 1.19,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "tol.light": {
+  "normal": 9.29,
+  "deutan": 7.9,
+  "protan": 8.77,
+  "tritan": 7.47,
+  "gray": 0.23,
+  "min_bg_contrast": 1.36,
+  "cvd_safe": false,
+  "safe_n": 5
+ },
+ "tol.dark": {
+  "normal": 15.72,
+  "deutan": 5.29,
+  "protan": 2.88,
+  "tritan": 3.77,
+  "gray": 0.68,
+  "min_bg_contrast": 5.98,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "tol.sunset": {
+  "lightness_monotonic": false,
+  "L_range": 0.49,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "tol.nightfall": {
+  "lightness_monotonic": false,
+  "L_range": 0.51,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "tol.BuRd": {
+  "lightness_monotonic": false,
+  "L_range": 0.48,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "tol.PRGn": {
+  "lightness_monotonic": false,
+  "L_range": 0.54,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "tol.YlOrBr": {
+  "lightness_monotonic": true,
+  "L_range": 0.64,
+  "cvd_safe": true
+ },
+ "tol.WhOrBr": {
+  "lightness_monotonic": true,
+  "L_range": 0.64,
+  "cvd_safe": true
+ },
+ "tol.iridescent": {
+  "lightness_monotonic": true,
+  "L_range": 0.64,
+  "cvd_safe": true
+ },
+ "tol.incandescent": {
+  "lightness_monotonic": true,
+  "L_range": 0.51,
+  "cvd_safe": true
+ },
+ "met.archambault": {
+  "normal": 19.55,
+  "deutan": 13.48,
+  "protan": 15.58,
+  "tritan": 7.06,
+  "gray": 1.08,
+  "min_bg_contrast": 1.47,
+  "cvd_safe": false,
+  "safe_n": 5
+ },
+ "met.austria": {
+  "normal": 23.19,
+  "deutan": 7.87,
+  "protan": 15.69,
+  "tritan": 17.57,
+  "gray": 1.95,
+  "min_bg_contrast": 1.5,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "met.benedictus": {
+  "lightness_monotonic": false,
+  "L_range": 0.64,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "met.cassatt1": {
+  "lightness_monotonic": false,
+  "L_range": 0.41,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "met.cassatt2": {
+  "lightness_monotonic": false,
+  "L_range": 0.6,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "met.cross": {
+  "normal": 16.81,
+  "deutan": 3.21,
+  "protan": 3.51,
+  "tritan": 5.1,
+  "gray": 0.35,
+  "min_bg_contrast": 1.69,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "met.degas": {
+  "normal": 11.94,
+  "deutan": 4.01,
+  "protan": 4.91,
+  "tritan": 11.9,
+  "gray": 0.72,
+  "min_bg_contrast": 2.18,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "met.demuth": {
+  "normal": 8.83,
+  "deutan": 8.81,
+  "protan": 8.88,
+  "tritan": 8.69,
+  "gray": 0.96,
+  "min_bg_contrast": 1.63,
+  "cvd_safe": false,
+  "safe_n": 6
+ },
+ "met.derain": {
+  "normal": 11.87,
+  "deutan": 10.79,
+  "protan": 6.83,
+  "tritan": 9.2,
+  "gray": 1.08,
+  "min_bg_contrast": 1.6,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "met.egypt": {
+  "normal": 28.77,
+  "deutan": 17.51,
+  "protan": 13.96,
+  "tritan": 15.03,
+  "gray": 5.53,
+  "min_bg_contrast": 1.82,
+  "cvd_safe": true,
+  "safe_n": 4
+ },
+ "met.gauguin": {
+  "normal": 12.72,
+  "deutan": 5.35,
+  "protan": 4.36,
+  "tritan": 5.39,
+  "gray": 1.08,
+  "min_bg_contrast": 2.95,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "met.greek": {
+  "lightness_monotonic": true,
+  "L_range": 0.6,
+  "cvd_safe": true
+ },
+ "met.hiroshige": {
+  "lightness_monotonic": false,
+  "L_range": 0.55,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "met.hokusai1": {
+  "normal": 14.17,
+  "deutan": 6.18,
+  "protan": 9.44,
+  "tritan": 4.61,
+  "gray": 1.34,
+  "min_bg_contrast": 1.61,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "met.hokusai2": {
+  "lightness_monotonic": true,
+  "L_range": 0.5,
+  "cvd_safe": true
+ },
+ "met.hokusai3": {
+  "lightness_monotonic": false,
+  "L_range": 0.56,
+  "cvd_safe": false
+ },
+ "met.homer1": {
+  "lightness_monotonic": false,
+  "L_range": 0.63,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "met.homer2": {
+  "normal": 12.67,
+  "deutan": 5.45,
+  "protan": 4.97,
+  "tritan": 15.4,
+  "gray": 3.01,
+  "min_bg_contrast": 1.61,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "met.isfahan1": {
+  "normal": 8.37,
+  "deutan": 7.91,
+  "protan": 8.55,
+  "tritan": 8.56,
+  "gray": 0.33,
+  "min_bg_contrast": 1.7,
+  "cvd_safe": false,
+  "safe_n": 6
+ },
+ "met.isfahan2": {
+  "normal": 22.68,
+  "deutan": 13.79,
+  "protan": 9.19,
+  "tritan": 6.45,
+  "gray": 2.42,
+  "min_bg_contrast": 1.81,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "met.java": {
+  "normal": 17.14,
+  "deutan": 13.11,
+  "protan": 8.23,
+  "tritan": 11.4,
+  "gray": 5.36,
+  "min_bg_contrast": 2.29,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "met.johnson": {
+  "normal": 17.23,
+  "deutan": 16.67,
+  "protan": 15.81,
+  "tritan": 14.57,
+  "gray": 1.18,
+  "min_bg_contrast": 1.66,
+  "cvd_safe": true,
+  "safe_n": 5
+ },
+ "met.juarez": {
+  "normal": 17.56,
+  "deutan": 8.04,
+  "protan": 8.04,
+  "tritan": 16.07,
+  "gray": 0.75,
+  "min_bg_contrast": 1.92,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "met.kandinsky": {
+  "normal": 25.21,
+  "deutan": 13.81,
+  "protan": 15.11,
+  "tritan": 20.21,
+  "gray": 5.82,
+  "min_bg_contrast": 2.6,
+  "cvd_safe": true,
+  "safe_n": 4
+ },
+ "met.klimt": {
+  "normal": 19.62,
+  "deutan": 9.77,
+  "protan": 2.24,
+  "tritan": 11.35,
+  "gray": 5.71,
+  "min_bg_contrast": 1.58,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "met.lakota": {
+  "normal": 21.44,
+  "deutan": 10.05,
+  "protan": 11.45,
+  "tritan": 16.88,
+  "gray": 0.99,
+  "min_bg_contrast": 1.73,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "met.manet": {
+  "normal": 9.19,
+  "deutan": 5.09,
+  "protan": 7.51,
+  "tritan": 7.02,
+  "gray": 0.36,
+  "min_bg_contrast": 1.28,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "met.monet": {
+  "normal": 13.14,
+  "deutan": 3.67,
+  "protan": 5.93,
+  "tritan": 7.78,
+  "gray": 1.24,
+  "min_bg_contrast": 1.54,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "met.moreau": {
+  "normal": 12.55,
+  "deutan": 12.77,
+  "protan": 10.54,
+  "tritan": 9.79,
+  "gray": 0.95,
+  "min_bg_contrast": 2.34,
+  "cvd_safe": false,
+  "safe_n": 6
+ },
+ "met.morgenstern": {
+  "lightness_monotonic": false,
+  "L_range": 0.29,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "met.nattier": {
+  "normal": 9.62,
+  "deutan": 4.75,
+  "protan": 3.77,
+  "tritan": 10.0,
+  "gray": 2.16,
+  "min_bg_contrast": 2.93,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "met.navajo": {
+  "normal": 8.9,
+  "deutan": 7.95,
+  "protan": 8.75,
+  "tritan": 3.47,
+  "gray": 1.94,
+  "min_bg_contrast": 1.53,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "met.newkingdom": {
+  "normal": 13.54,
+  "deutan": 10.48,
+  "protan": 12.39,
+  "tritan": 11.61,
+  "gray": 4.23,
+  "min_bg_contrast": 1.75,
+  "cvd_safe": true,
+  "safe_n": 5
+ },
+ "met.nizami": {
+  "normal": 14.68,
+  "deutan": 9.26,
+  "protan": 11.92,
+  "tritan": 7.98,
+  "gray": 0.26,
+  "min_bg_contrast": 1.89,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "met.okeeffe1": {
+  "lightness_monotonic": false,
+  "L_range": 0.6,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "met.okeeffe2": {
+  "lightness_monotonic": true,
+  "L_range": 0.47,
+  "cvd_safe": true
+ },
+ "met.paquin": {
+  "lightness_monotonic": false,
+  "L_range": 0.52,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "met.peru1": {
+  "normal": 14.5,
+  "deutan": 14.47,
+  "protan": 13.91,
+  "tritan": 6.13,
+  "gray": 1.06,
+  "min_bg_contrast": 2.1,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "met.peru2": {
+  "normal": 10.0,
+  "deutan": 3.23,
+  "protan": 3.8,
+  "tritan": 7.63,
+  "gray": 4.21,
+  "min_bg_contrast": 2.33,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "met.pillement": {
+  "normal": 10.04,
+  "deutan": 9.57,
+  "protan": 7.58,
+  "tritan": 9.65,
+  "gray": 0.71,
+  "min_bg_contrast": 3.42,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "met.pissaro": {
+  "normal": 14.86,
+  "deutan": 11.17,
+  "protan": 12.22,
+  "tritan": 7.66,
+  "gray": 4.81,
+  "min_bg_contrast": 1.85,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "met.redon": {
+  "normal": 10.78,
+  "deutan": 6.74,
+  "protan": 3.24,
+  "tritan": 3.94,
+  "gray": 0.3,
+  "min_bg_contrast": 1.93,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "met.renoir": {
+  "normal": 8.65,
+  "deutan": 6.77,
+  "protan": 1.51,
+  "tritan": 4.57,
+  "gray": 0.0,
+  "min_bg_contrast": 1.73,
+  "cvd_safe": false,
+  "safe_n": 5
+ },
+ "met.signac": {
+  "normal": 8.47,
+  "deutan": 5.04,
+  "protan": 2.52,
+  "tritan": 5.54,
+  "gray": 0.0,
+  "min_bg_contrast": 1.3,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "met.tam": {
+  "lightness_monotonic": true,
+  "L_range": 0.61,
+  "cvd_safe": true
+ },
+ "met.tara": {
+  "normal": 14.62,
+  "deutan": 6.47,
+  "protan": 4.72,
+  "tritan": 8.68,
+  "gray": 1.84,
+  "min_bg_contrast": 1.81,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "met.thomas": {
+  "normal": 14.86,
+  "deutan": 7.99,
+  "protan": 4.71,
+  "tritan": 7.97,
+  "gray": 2.09,
+  "min_bg_contrast": 2.38,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "met.tiepolo": {
+  "normal": 10.81,
+  "deutan": 8.99,
+  "protan": 4.64,
+  "tritan": 4.74,
+  "gray": 0.0,
+  "min_bg_contrast": 1.82,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "met.troy": {
+  "normal": 8.9,
+  "deutan": 8.98,
+  "protan": 6.69,
+  "tritan": 8.92,
+  "gray": 2.42,
+  "min_bg_contrast": 2.79,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "met.tsimshian": {
+  "normal": 0.0,
+  "deutan": 0.0,
+  "protan": 0.0,
+  "tritan": 0.0,
+  "gray": 0.0,
+  "min_bg_contrast": 2.1,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "met.vangogh1": {
+  "normal": 8.12,
+  "deutan": 8.02,
+  "protan": 8.27,
+  "tritan": 6.94,
+  "gray": 1.22,
+  "min_bg_contrast": 2.11,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "met.vangogh2": {
+  "normal": 10.42,
+  "deutan": 4.21,
+  "protan": 7.03,
+  "tritan": 7.51,
+  "gray": 1.89,
+  "min_bg_contrast": 1.52,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "met.vangogh3": {
+  "lightness_monotonic": true,
+  "L_range": 0.66,
+  "cvd_safe": true
+ },
+ "met.veronese": {
+  "normal": 8.65,
+  "deutan": 8.77,
+  "protan": 7.73,
+  "tritan": 8.07,
+  "gray": 3.36,
+  "min_bg_contrast": 2.89,
+  "cvd_safe": false,
+  "safe_n": 5
+ },
+ "met.wissing": {
+  "normal": 10.88,
+  "deutan": 5.93,
+  "protan": 2.61,
+  "tritan": 10.87,
+  "gray": 1.66,
+  "min_bg_contrast": 3.79,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "wes.bottlerocket1": {
+  "normal": 3.94,
+  "deutan": 3.75,
+  "protan": 4.04,
+  "tritan": 5.07,
+  "gray": 0.0,
+  "min_bg_contrast": 7.22,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "wes.bottlerocket2": {
+  "normal": 12.88,
+  "deutan": 12.92,
+  "protan": 8.06,
+  "tritan": 7.86,
+  "gray": 5.69,
+  "min_bg_contrast": 1.44,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "wes.rushmore1": {
+  "normal": 10.04,
+  "deutan": 6.41,
+  "protan": 7.81,
+  "tritan": 2.41,
+  "gray": 1.27,
+  "min_bg_contrast": 1.71,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "wes.royal1": {
+  "normal": 23.24,
+  "deutan": 14.87,
+  "protan": 22.5,
+  "tritan": 18.02,
+  "gray": 0.32,
+  "min_bg_contrast": 1.15,
+  "cvd_safe": true,
+  "safe_n": 4
+ },
+ "wes.royal2": {
+  "normal": 12.23,
+  "deutan": 4.31,
+  "protan": 7.08,
+  "tritan": 4.42,
+  "gray": 2.74,
+  "min_bg_contrast": 1.31,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "wes.zissou1": {
+  "normal": 8.36,
+  "deutan": 5.51,
+  "protan": 6.83,
+  "tritan": 7.36,
+  "gray": 2.5,
+  "min_bg_contrast": 1.59,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "wes.darjeeling1": {
+  "normal": 15.66,
+  "deutan": 5.17,
+  "protan": 9.03,
+  "tritan": 10.19,
+  "gray": 2.74,
+  "min_bg_contrast": 1.95,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "wes.darjeeling2": {
+  "normal": 16.23,
+  "deutan": 15.4,
+  "protan": 16.42,
+  "tritan": 13.85,
+  "gray": 0.71,
+  "min_bg_contrast": 1.49,
+  "cvd_safe": true,
+  "safe_n": 5
+ },
+ "wes.chevalier1": {
+  "normal": 17.77,
+  "deutan": 15.05,
+  "protan": 14.59,
+  "tritan": 9.76,
+  "gray": 0.92,
+  "min_bg_contrast": 1.39,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "wes.fantasticfox1": {
+  "normal": 3.09,
+  "deutan": 2.13,
+  "protan": 1.46,
+  "tritan": 2.54,
+  "gray": 0.31,
+  "min_bg_contrast": 1.56,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "wes.moonrise1": {
+  "normal": 13.44,
+  "deutan": 12.13,
+  "protan": 13.01,
+  "tritan": 13.18,
+  "gray": 2.07,
+  "min_bg_contrast": 1.35,
+  "cvd_safe": true,
+  "safe_n": 4
+ },
+ "wes.moonrise2": {
+  "normal": 24.11,
+  "deutan": 16.54,
+  "protan": 20.12,
+  "tritan": 23.55,
+  "gray": 1.05,
+  "min_bg_contrast": 1.76,
+  "cvd_safe": true,
+  "safe_n": 4
+ },
+ "wes.moonrise3": {
+  "normal": 10.79,
+  "deutan": 10.44,
+  "protan": 9.83,
+  "tritan": 8.18,
+  "gray": 0.75,
+  "min_bg_contrast": 1.39,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "wes.cavalcanti1": {
+  "normal": 12.64,
+  "deutan": 9.17,
+  "protan": 5.28,
+  "tritan": 17.83,
+  "gray": 0.61,
+  "min_bg_contrast": 1.96,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "wes.grandbudapest1": {
+  "normal": 18.77,
+  "deutan": 7.04,
+  "protan": 11.75,
+  "tritan": 4.45,
+  "gray": 3.34,
+  "min_bg_contrast": 1.73,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "wes.grandbudapest2": {
+  "normal": 16.24,
+  "deutan": 11.74,
+  "protan": 10.27,
+  "tritan": 3.66,
+  "gray": 1.38,
+  "min_bg_contrast": 1.56,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "wes.isleofdogs1": {
+  "normal": 17.47,
+  "deutan": 15.03,
+  "protan": 15.83,
+  "tritan": 4.61,
+  "gray": 2.12,
+  "min_bg_contrast": 1.51,
+  "cvd_safe": false,
+  "safe_n": 5
+ },
+ "wes.isleofdogs2": {
+  "lightness_monotonic": true,
+  "L_range": 0.67,
+  "cvd_safe": true
+ },
+ "wes.frenchdispatch": {
+  "normal": 7.14,
+  "deutan": 6.89,
+  "protan": 7.15,
+  "tritan": 4.77,
+  "gray": 1.94,
+  "min_bg_contrast": 1.68,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "wes.asteroidcity1": {
+  "normal": 13.69,
+  "deutan": 5.86,
+  "protan": 4.88,
+  "tritan": 12.53,
+  "gray": 1.34,
+  "min_bg_contrast": 2.06,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "wes.asteroidcity2": {
+  "normal": 7.87,
+  "deutan": 2.23,
+  "protan": 3.76,
+  "tritan": 6.82,
+  "gray": 1.15,
+  "min_bg_contrast": 1.77,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "wes.asteroidcity3": {
+  "normal": 22.77,
+  "deutan": 16.85,
+  "protan": 19.78,
+  "tritan": 10.8,
+  "gray": 4.26,
+  "min_bg_contrast": 1.48,
+  "cvd_safe": true,
+  "safe_n": 4
+ },
+ "journal.npg": {
+  "normal": 9.25,
+  "deutan": 6.96,
+  "protan": 4.32,
+  "tritan": 7.87,
+  "gray": 1.02,
+  "min_bg_contrast": 1.74,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "journal.aaas": {
+  "normal": 7.58,
+  "deutan": 4.8,
+  "protan": 4.26,
+  "tritan": 3.59,
+  "gray": 0.72,
+  "min_bg_contrast": 3.91,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "journal.nejm": {
+  "normal": 18.0,
+  "deutan": 8.93,
+  "protan": 4.39,
+  "tritan": 8.5,
+  "gray": 1.54,
+  "min_bg_contrast": 1.32,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "journal.lancet": {
+  "normal": 17.34,
+  "deutan": 7.11,
+  "protan": 12.38,
+  "tritan": 7.59,
+  "gray": 1.98,
+  "min_bg_contrast": 1.79,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "journal.jama": {
+  "normal": 21.71,
+  "deutan": 11.04,
+  "protan": 11.76,
+  "tritan": 7.64,
+  "gray": 0.38,
+  "min_bg_contrast": 2.5,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "journal.jco": {
+  "normal": 8.49,
+  "deutan": 7.69,
+  "protan": 9.71,
+  "tritan": 7.85,
+  "gray": 0.33,
+  "min_bg_contrast": 1.72,
+  "cvd_safe": false,
+  "safe_n": 6
+ },
+ "d3.category10": {
+  "normal": 16.2,
+  "deutan": 3.33,
+  "protan": 1.25,
+  "tritan": 9.53,
+  "gray": 1.18,
+  "min_bg_contrast": 2.01,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "journal.uchicago": {
+  "normal": 10.26,
+  "deutan": 5.57,
+  "protan": 4.73,
+  "tritan": 9.66,
+  "gray": 0.71,
+  "min_bg_contrast": 2.0,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "journal.cosmic_dark": {
+  "normal": 11.83,
+  "deutan": 0.55,
+  "protan": 1.03,
+  "tritan": 8.94,
+  "gray": 0.32,
+  "min_bg_contrast": 1.05,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "journal.cosmic_light": {
+  "normal": 14.72,
+  "deutan": 7.07,
+  "protan": 4.55,
+  "tritan": 7.45,
+  "gray": 1.22,
+  "min_bg_contrast": 2.51,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "scifi.futurama": {
+  "normal": 7.48,
+  "deutan": 5.55,
+  "protan": 5.61,
+  "tritan": 2.0,
+  "gray": 1.47,
+  "min_bg_contrast": 1.44,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "scifi.startrek": {
+  "normal": 15.92,
+  "deutan": 9.74,
+  "protan": 7.59,
+  "tritan": 8.9,
+  "gray": 1.44,
+  "min_bg_contrast": 1.5,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "scifi.tron": {
+  "normal": 14.23,
+  "deutan": 5.94,
+  "protan": 6.09,
+  "tritan": 10.44,
+  "gray": 0.36,
+  "min_bg_contrast": 5.34,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "journal.frontiers": {
+  "normal": 17.92,
+  "deutan": 2.51,
+  "protan": 7.2,
+  "tritan": 8.43,
+  "gray": 0.34,
+  "min_bg_contrast": 1.48,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "ui.flatui": {
+  "normal": 12.58,
+  "deutan": 3.66,
+  "protan": 9.47,
+  "tritan": 3.51,
+  "gray": 0.78,
+  "min_bg_contrast": 1.78,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "ui.flatui_aussie": {
+  "normal": 17.91,
+  "deutan": 3.61,
+  "protan": 4.17,
+  "tritan": 8.24,
+  "gray": 2.52,
+  "min_bg_contrast": 1.26,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "theme.catppuccin_latte": {
+  "normal": 12.61,
+  "deutan": 0.94,
+  "protan": 1.7,
+  "tritan": 5.48,
+  "gray": 0.0,
+  "min_bg_contrast": 2.31,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "theme.catppuccin_frappe": {
+  "normal": 9.56,
+  "deutan": 2.49,
+  "protan": 1.32,
+  "tritan": 4.07,
+  "gray": 0.25,
+  "min_bg_contrast": 4.65,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "theme.catppuccin_mocha": {
+  "normal": 9.11,
+  "deutan": 2.4,
+  "protan": 1.05,
+  "tritan": 2.64,
+  "gray": 0.0,
+  "min_bg_contrast": 7.08,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "theme.rosepine_main": {
+  "normal": 19.93,
+  "deutan": 9.36,
+  "protan": 11.1,
+  "tritan": 4.28,
+  "gray": 0.25,
+  "min_bg_contrast": 3.38,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "theme.rosepine_moon": {
+  "normal": 13.05,
+  "deutan": 7.59,
+  "protan": 9.73,
+  "tritan": 8.56,
+  "gray": 0.99,
+  "min_bg_contrast": 4.29,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "theme.rosepine_dawn": {
+  "normal": 14.0,
+  "deutan": 4.15,
+  "protan": 9.64,
+  "tritan": 6.84,
+  "gray": 2.66,
+  "min_bg_contrast": 2.05,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "theme.nord_aurora": {
+  "normal": 15.09,
+  "deutan": 6.86,
+  "protan": 6.72,
+  "tritan": 10.12,
+  "gray": 0.0,
+  "min_bg_contrast": 3.05,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "theme.nord_frost": {
+  "normal": 6.89,
+  "deutan": 6.75,
+  "protan": 7.33,
+  "tritan": 3.62,
+  "gray": 0.82,
+  "min_bg_contrast": 2.0,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "theme.nord_full": {
+  "normal": 15.09,
+  "deutan": 6.81,
+  "protan": 6.72,
+  "tritan": 9.74,
+  "gray": 0.0,
+  "min_bg_contrast": 3.05,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "mpl.okabe_ito": {
+  "normal": 21.72,
+  "deutan": 11.61,
+  "protan": 12.25,
+  "tritan": 10.87,
+  "gray": 0.57,
+  "min_bg_contrast": 1.32,
+  "cvd_safe": true,
+  "safe_n": 8
+ },
+ "mpl.petroff6": {
+  "normal": 17.87,
+  "deutan": 14.66,
+  "protan": 10.57,
+  "tritan": 18.34,
+  "gray": 2.9,
+  "min_bg_contrast": 2.15,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "mpl.petroff8": {
+  "normal": 19.98,
+  "deutan": 14.51,
+  "protan": 9.0,
+  "tritan": 11.74,
+  "gray": 0.67,
+  "min_bg_contrast": 1.86,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "mpl.petroff10": {
+  "normal": 17.35,
+  "deutan": 12.62,
+  "protan": 11.91,
+  "tritan": 13.32,
+  "gray": 0.35,
+  "min_bg_contrast": 1.58,
+  "cvd_safe": true,
+  "safe_n": 10
+ },
+ "mpl.tab10": {
+  "normal": 16.2,
+  "deutan": 3.33,
+  "protan": 1.25,
+  "tritan": 9.53,
+  "gray": 1.18,
+  "min_bg_contrast": 2.01,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "okabe_ito": {
+  "normal": 21.72,
+  "deutan": 11.61,
+  "protan": 12.25,
+  "tritan": 10.87,
+  "gray": 0.57,
+  "min_bg_contrast": 1.32,
+  "cvd_safe": true,
+  "safe_n": 8
+ },
+ "okabe_ito_no_yellow": {
+  "normal": 22.24,
+  "deutan": 12.51,
+  "protan": 12.25,
+  "tritan": 10.87,
+  "gray": 0.57,
+  "min_bg_contrast": 2.25,
+  "cvd_safe": true,
+  "safe_n": 7
+ },
+ "ibl.stimulus": {
+  "lightness_monotonic": true,
+  "L_range": 0.56,
+  "cvd_safe": true
+ },
+ "ibl.choice": {
+  "lightness_monotonic": true,
+  "L_range": 0.45,
+  "cvd_safe": true
+ },
+ "ibl.feedback": {
+  "lightness_monotonic": true,
+  "L_range": 0.47,
+  "cvd_safe": true
+ },
+ "ibl.prior": {
+  "lightness_monotonic": true,
+  "L_range": 0.57,
+  "cvd_safe": true
+ },
+ "ibl.movement": {
+  "lightness_monotonic": true,
+  "L_range": 0.46,
+  "cvd_safe": true
+ },
+ "ibl.variables": {
+  "normal": 15.09,
+  "deutan": 7.12,
+  "protan": 4.69,
+  "tritan": 15.57,
+  "gray": 3.96,
+  "min_bg_contrast": 2.03,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "cebra": {
+  "lightness_monotonic": false,
+  "L_range": 0.09,
+  "cvd_safe": false
+ },
+ "allen.ccf": {
+  "normal": 8.06,
+  "deutan": 1.76,
+  "protan": 2.5,
+  "tritan": 3.61,
+  "gray": 0.25,
+  "min_bg_contrast": 1.2,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "rsa.classic": {
+  "lightness_monotonic": false,
+  "L_range": 0.52,
+  "cvd_safe": false
+ },
+ "ft": {
+  "normal": 20.33,
+  "deutan": 2.14,
+  "protan": 7.35,
+  "tritan": 9.88,
+  "gray": 2.08,
+  "min_bg_contrast": 1.73,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "economist": {
+  "normal": 14.27,
+  "deutan": 10.27,
+  "protan": 15.85,
+  "tritan": 8.97,
+  "gray": 0.38,
+  "min_bg_contrast": 1.48,
+  "cvd_safe": false,
+  "safe_n": 5
+ },
+ "economist.chart": {
+  "normal": 6.67,
+  "deutan": 4.78,
+  "protan": 6.34,
+  "tritan": 6.08,
+  "gray": 3.53,
+  "min_bg_contrast": 2.19,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "owid.a": {
+  "normal": 9.18,
+  "deutan": 4.58,
+  "protan": 1.41,
+  "tritan": 4.9,
+  "gray": 0.0,
+  "min_bg_contrast": 2.93,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "owid.b": {
+  "normal": 8.32,
+  "deutan": 0.77,
+  "protan": 5.46,
+  "tritan": 3.38,
+  "gray": 0.0,
+  "min_bg_contrast": 2.73,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "owid.c": {
+  "normal": 9.18,
+  "deutan": 0.77,
+  "protan": 5.6,
+  "tritan": 3.56,
+  "gray": 0.4,
+  "min_bg_contrast": 2.73,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "owid.d": {
+  "normal": 9.15,
+  "deutan": 0.77,
+  "protan": 0.7,
+  "tritan": 6.56,
+  "gray": 0.0,
+  "min_bg_contrast": 2.75,
+  "cvd_safe": false,
+  "safe_n": 5
+ },
+ "owid.lines": {
+  "normal": 8.32,
+  "deutan": 2.15,
+  "protan": 1.41,
+  "tritan": 3.29,
+  "gray": 0.0,
+  "min_bg_contrast": 4.56,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "reuters": {
+  "normal": 19.08,
+  "deutan": 5.62,
+  "protan": 6.83,
+  "tritan": 10.46,
+  "gray": 2.36,
+  "min_bg_contrast": 2.03,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "newamerica": {
+  "normal": 17.08,
+  "deutan": 10.15,
+  "protan": 10.43,
+  "tritan": 11.8,
+  "gray": 1.11,
+  "min_bg_contrast": 2.13,
+  "cvd_safe": true,
+  "safe_n": 5
+ },
+ "pew": {
+  "normal": 13.91,
+  "deutan": 12.26,
+  "protan": 8.77,
+  "tritan": 14.03,
+  "gray": 0.46,
+  "min_bg_contrast": 1.39,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "yougov.likert": {
+  "lightness_monotonic": false,
+  "L_range": 0.27,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "observable10": {
+  "normal": 18.01,
+  "deutan": 2.6,
+  "protan": 6.04,
+  "tritan": 8.18,
+  "gray": 0.53,
+  "min_bg_contrast": 1.91,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "tableau10": {
+  "normal": 18.07,
+  "deutan": 0.7,
+  "protan": 1.04,
+  "tritan": 6.8,
+  "gray": 1.16,
+  "min_bg_contrast": 1.61,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "carbon.light": {
+  "normal": 12.16,
+  "deutan": 3.01,
+  "protan": 5.83,
+  "tritan": 4.48,
+  "gray": 0.0,
+  "min_bg_contrast": 3.33,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "carbon.dark": {
+  "normal": 14.46,
+  "deutan": 7.44,
+  "protan": 6.49,
+  "tritan": 4.67,
+  "gray": 0.0,
+  "min_bg_contrast": 3.6,
+  "cvd_safe": false,
+  "safe_n": 7
+ },
+ "carbon.blue": {
+  "lightness_monotonic": true,
+  "L_range": 0.76,
+  "cvd_safe": true
+ },
+ "carbon.purple": {
+  "lightness_monotonic": true,
+  "L_range": 0.76,
+  "cvd_safe": true
+ },
+ "carbon.teal": {
+  "lightness_monotonic": true,
+  "L_range": 0.76,
+  "cvd_safe": true
+ },
+ "carbon.cyan": {
+  "lightness_monotonic": true,
+  "L_range": 0.76,
+  "cvd_safe": true
+ },
+ "carbon.red_cyan": {
+  "lightness_monotonic": false,
+  "L_range": 0.62,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "carbon.purple_teal": {
+  "lightness_monotonic": false,
+  "L_range": 0.63,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "atlassian": {
+  "normal": 12.71,
+  "deutan": 5.87,
+  "protan": 1.46,
+  "tritan": 12.54,
+  "gray": 0.0,
+  "min_bg_contrast": 2.44,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "primer": {
+  "normal": 16.77,
+  "deutan": 2.17,
+  "protan": 3.15,
+  "tritan": 4.25,
+  "gray": 0.0,
+  "min_bg_contrast": 3.23,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "primer.muted": {
+  "normal": 5.49,
+  "deutan": 0.61,
+  "protan": 1.07,
+  "tritan": 1.82,
+  "gray": 0.0,
+  "min_bg_contrast": 1.18,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "spectrum": {
+  "normal": 7.78,
+  "deutan": 1.34,
+  "protan": 1.45,
+  "tritan": 3.36,
+  "gray": 0.0,
+  "min_bg_contrast": 4.79,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "spectrum.dark": {
+  "normal": 8.05,
+  "deutan": 0.95,
+  "protan": 1.16,
+  "tritan": 2.23,
+  "gray": 0.0,
+  "min_bg_contrast": 5.35,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "radix": {
+  "normal": 5.26,
+  "deutan": 0.99,
+  "protan": 1.82,
+  "tritan": 3.27,
+  "gray": 0.0,
+  "min_bg_contrast": 1.58,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "tailwind.500": {
+  "normal": 7.25,
+  "deutan": 1.97,
+  "protan": 0.83,
+  "tritan": 5.9,
+  "gray": 0.37,
+  "min_bg_contrast": 1.95,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "tailwind.400": {
+  "normal": 8.23,
+  "deutan": 0.29,
+  "protan": 1.11,
+  "tritan": 5.73,
+  "gray": 0.32,
+  "min_bg_contrast": 6.36,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "tailwind.700": {
+  "normal": 6.1,
+  "deutan": 0.08,
+  "protan": 2.27,
+  "tritan": 2.63,
+  "gray": 0.0,
+  "min_bg_contrast": 4.95,
+  "cvd_safe": false,
+  "safe_n": 3
+ },
+ "pantone.coty": {
+  "normal": 21.09,
+  "deutan": 17.23,
+  "protan": 16.96,
+  "tritan": 20.72,
+  "gray": 7.69,
+  "min_bg_contrast": 1.16,
+  "cvd_safe": true,
+  "safe_n": 3
+ },
+ "pantone.deliciousness": {
+  "normal": 17.26,
+  "deutan": 13.61,
+  "protan": 18.04,
+  "tritan": 10.77,
+  "gray": 11.23,
+  "min_bg_contrast": 1.78,
+  "cvd_safe": true,
+  "safe_n": 4
+ },
+ "pantone.relaxed_elegance": {
+  "lightness_monotonic": true,
+  "L_range": 0.44,
+  "cvd_safe": true
+ },
+ "pantone.uniquely_balanced": {
+  "normal": 18.05,
+  "deutan": 6.81,
+  "protan": 12.0,
+  "tritan": 11.33,
+  "gray": 1.68,
+  "min_bg_contrast": 2.09,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "nippon.ai": {
+  "lightness_monotonic": true,
+  "L_range": 0.6,
+  "cvd_safe": true
+ },
+ "nippon.warm": {
+  "normal": 7.75,
+  "deutan": 4.41,
+  "protan": 3.81,
+  "tritan": 6.05,
+  "gray": 3.01,
+  "min_bg_contrast": 1.61,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "nippon.green": {
+  "normal": 9.53,
+  "deutan": 9.86,
+  "protan": 8.49,
+  "tritan": 3.48,
+  "gray": 1.92,
+  "min_bg_contrast": 2.73,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "nippon.mix": {
+  "normal": 10.57,
+  "deutan": 6.02,
+  "protan": 9.34,
+  "tritan": 6.05,
+  "gray": 2.55,
+  "min_bg_contrast": 1.81,
+  "cvd_safe": false,
+  "safe_n": 5
+ },
+ "nippon.wabi": {
+  "normal": 7.28,
+  "deutan": 7.2,
+  "protan": 7.39,
+  "tritan": 7.27,
+  "gray": 3.52,
+  "min_bg_contrast": 1.25,
+  "cvd_safe": false,
+  "safe_n": 4
+ },
+ "dracula": {
+  "normal": 18.2,
+  "deutan": 3.19,
+  "protan": 3.56,
+  "tritan": 7.2,
+  "gray": 0.23,
+  "min_bg_contrast": 4.53,
+  "cvd_safe": false,
+  "safe_n": 1
+ },
+ "solarized": {
+  "normal": 10.09,
+  "deutan": 1.74,
+  "protan": 2.42,
+  "tritan": 4.38,
+  "gray": 0.0,
+  "min_bg_contrast": 2.93,
+  "cvd_safe": false,
+  "safe_n": 2
+ },
+ "sp.nature": {
+  "normal": 24.45,
+  "deutan": 11.0,
+  "protan": 11.35,
+  "tritan": 11.09,
+  "gray": 1.58,
+  "min_bg_contrast": 1.94,
+  "cvd_safe": true,
+  "safe_n": 7
+ },
+ "sp.neuro": {
+  "normal": 20.18,
+  "deutan": 11.12,
+  "protan": 11.35,
+  "tritan": 11.01,
+  "gray": 0.31,
+  "min_bg_contrast": 1.67,
+  "cvd_safe": true,
+  "safe_n": 7
+ },
+ "sp.lab": {
+  "normal": 25.03,
+  "deutan": 15.37,
+  "protan": 11.04,
+  "tritan": 19.37,
+  "gray": 2.34,
+  "min_bg_contrast": 2.17,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.aurora": {
+  "normal": 22.64,
+  "deutan": 12.13,
+  "protan": 15.18,
+  "tritan": 11.0,
+  "gray": 0.34,
+  "min_bg_contrast": 1.89,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.lavender": {
+  "normal": 20.58,
+  "deutan": 11.11,
+  "protan": 14.19,
+  "tritan": 16.49,
+  "gray": 2.26,
+  "min_bg_contrast": 1.28,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.mocha": {
+  "normal": 17.54,
+  "deutan": 11.19,
+  "protan": 11.25,
+  "tritan": 15.06,
+  "gray": 6.54,
+  "min_bg_contrast": 1.16,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.terracotta": {
+  "normal": 22.1,
+  "deutan": 11.63,
+  "protan": 11.02,
+  "tritan": 11.71,
+  "gray": 3.01,
+  "min_bg_contrast": 2.19,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.nordic": {
+  "normal": 23.9,
+  "deutan": 15.01,
+  "protan": 12.95,
+  "tritan": 19.11,
+  "gray": 0.53,
+  "min_bg_contrast": 1.88,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.botanical": {
+  "normal": 22.07,
+  "deutan": 11.12,
+  "protan": 11.12,
+  "tritan": 21.54,
+  "gray": 6.06,
+  "min_bg_contrast": 1.15,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.bauhaus": {
+  "normal": 28.02,
+  "deutan": 24.41,
+  "protan": 23.47,
+  "tritan": 22.33,
+  "gray": 10.07,
+  "min_bg_contrast": 1.85,
+  "cvd_safe": true,
+  "safe_n": 5
+ },
+ "sp.riso": {
+  "normal": 24.68,
+  "deutan": 11.13,
+  "protan": 11.06,
+  "tritan": 12.73,
+  "gray": 3.23,
+  "min_bg_contrast": 1.77,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.riso_duo": {
+  "normal": 47.95,
+  "deutan": 59.42,
+  "protan": 43.88,
+  "tritan": 62.96,
+  "gray": 25.44,
+  "min_bg_contrast": 2.87,
+  "cvd_safe": true,
+  "safe_n": 2
+ },
+ "sp.synthwave": {
+  "normal": 21.27,
+  "deutan": 13.4,
+  "protan": 11.21,
+  "tritan": 11.04,
+  "gray": 0.99,
+  "min_bg_contrast": 6.06,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.neon": {
+  "normal": 24.74,
+  "deutan": 11.01,
+  "protan": 11.08,
+  "tritan": 11.65,
+  "gray": 2.38,
+  "min_bg_contrast": 5.73,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.midnight": {
+  "normal": 21.99,
+  "deutan": 11.03,
+  "protan": 11.15,
+  "tritan": 11.05,
+  "gray": 3.36,
+  "min_bg_contrast": 5.64,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.pastel": {
+  "normal": 19.87,
+  "deutan": 11.0,
+  "protan": 11.0,
+  "tritan": 12.1,
+  "gray": 1.18,
+  "min_bg_contrast": 1.3,
+  "cvd_safe": true,
+  "safe_n": 6
+ },
+ "sp.mono_blue": {
+  "lightness_monotonic": true,
+  "L_range": 0.68,
+  "cvd_safe": true
+ },
+ "sp.mono_warm": {
+  "lightness_monotonic": true,
+  "L_range": 0.67,
+  "cvd_safe": true
+ },
+ "sp.depth": {
+  "lightness_monotonic": true,
+  "L_range": 0.66,
+  "cvd_safe": true
+ },
+ "sp.icefire": {
+  "lightness_monotonic": false,
+  "L_range": 0.52,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "sp.teal_plum": {
+  "lightness_monotonic": false,
+  "L_range": 0.6,
+  "cvd_safe": true,
+  "diverging_ok": true
+ },
+ "neuro.ei": {
+  "normal": 41.52,
+  "deutan": 44.63,
+  "protan": 29.93,
+  "tritan": 64.83,
+  "gray": 5.54,
+  "min_bg_contrast": 4.36,
+  "cvd_safe": true
+ },
+ "neuro.lr": {
+  "normal": 41.52,
+  "deutan": 44.63,
+  "protan": 29.93,
+  "tritan": 64.83,
+  "gray": 5.54,
+  "min_bg_contrast": 4.36,
+  "cvd_safe": true
+ },
+ "neuro.opto": {
+  "normal": 20.72,
+  "deutan": 23.31,
+  "protan": 21.39,
+  "tritan": 17.93,
+  "gray": 4.64,
+  "min_bg_contrast": 2.17,
+  "cvd_safe": true
+ },
+ "neuro.model_data": {
+  "normal": 27.33,
+  "deutan": 28.82,
+  "protan": 25.51,
+  "tritan": 25.66,
+  "gray": 11.39,
+  "min_bg_contrast": 1.91,
+  "cvd_safe": true
+ },
+ "neuro.split": {
+  "normal": 38.61,
+  "deutan": 21.34,
+  "protan": 26.5,
+  "tritan": 20.18,
+  "gray": 1.59,
+  "min_bg_contrast": 2.05,
+  "cvd_safe": true
+ },
+ "neuro.outcome": {
+  "normal": 26.78,
+  "deutan": 15.58,
+  "protan": 13.34,
+  "tritan": 24.59,
+  "gray": 7.42,
+  "min_bg_contrast": 1.91,
+  "cvd_safe": true
+ },
+ "neuro.bands": {
+  "normal": 18.18,
+  "deutan": 9.38,
+  "protan": 11.42,
+  "tritan": 13.56,
+  "gray": 1.7,
+  "min_bg_contrast": 1.67,
+  "cvd_safe": false
+ },
+ "neuro.cortical_layers": {
+  "normal": 15.8,
+  "deutan": 12.28,
+  "protan": 8.71,
+  "tritan": 15.86,
+  "gray": 9.2,
+  "min_bg_contrast": 1.24,
+  "cvd_safe": false
+ },
+ "neuro.cell_class": {
+  "normal": 20.14,
+  "deutan": 3.47,
+  "protan": 2.47,
+  "tritan": 6.33,
+  "gray": 0.39,
+  "min_bg_contrast": 2.05,
+  "cvd_safe": false
+ },
+ "neuro.areas_visual": {
+  "normal": 20.75,
+  "deutan": 8.76,
+  "protan": 3.57,
+  "tritan": 13.8,
+  "gray": 1.18,
+  "min_bg_contrast": 2.05,
+  "cvd_safe": false
+ },
+ "neuro.species": {
+  "normal": 18.17,
+  "deutan": 4.76,
+  "protan": 4.88,
+  "tritan": 11.21,
+  "gray": 2.69,
+  "min_bg_contrast": 2.99,
+  "cvd_safe": false
+ },
+ "sign": {
+  "normal": 35.13,
+  "deutan": 28.94,
+  "protan": 32.16,
+  "tritan": 36.3,
+  "gray": 5.17,
+  "min_bg_contrast": 1.72,
+  "cvd_safe": true
+ },
+ "status": {
+  "normal": 26.2,
+  "deutan": 7.87,
+  "protan": 11.82,
+  "tritan": 15.61,
+  "gray": 0.0,
+  "min_bg_contrast": 1.68,
+  "cvd_safe": false
+ }
+}
